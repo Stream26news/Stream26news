@@ -61,7 +61,10 @@
   .hero{padding:44px 0 12px;}
   .hero-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:48px;}
   .art{aspect-ratio:16/10;border-radius:2px;position:relative;overflow:hidden;background:linear-gradient(150deg,#1A1A1A 0%,#3A3A3A 45%,#8C0A10 80%,#E30613 100%);}
-  .art::after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(115deg,rgba(255,255,255,.05) 0px,rgba(255,255,255,.05) 1px,transparent 1px,transparent 6px);mix-blend-mode:overlay;}
+  .art::after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.6) 0%,rgba(0,0,0,0) 60%);}
+  .art{display:flex;align-items:flex-end;padding:14px;}
+  .art .art-label{position:relative;z-index:1;color:#fff;font-family:'Fraunces',serif;font-weight:700;font-size:14px;line-height:1.2;}
+  .side-story .art .art-label{font-size:11px;}
   .art.b{background:linear-gradient(150deg,#0A0A0A 0%,#2B2B2B 50%,#5A5A5A 85%,#B5B5B5 100%);}
   .art.c{background:linear-gradient(150deg,#2A0000 0%,#6B0308 45%,#C4050F 80%,#FF5A63 100%);}
   .art.d{background:linear-gradient(150deg,#111 0%,#333 45%,#555 75%,#8C0A10 100%);}
@@ -175,7 +178,7 @@
     <div class="section-label"><span>Global News</span></div>
     <div class="hero-grid">
       <article>
-        <div class="art" role="img" aria-label="Editorial placeholder artwork"></div>
+        <div class="art" role="img" aria-label="Strait of Hormuz shipping disruption"><span class="art-label">Six months on: the Hormuz trade chokepoint</span></div>
       </article>
       <div></div>
     </div>
@@ -184,32 +187,32 @@
   <section class="hero wrap" style="padding-top:0;">
     <div class="hero-grid">
       <article>
-        <span class="kicker">Explainer</span>
-        <h2 class="headline-xl"><a href="#">Why global supply chains keep getting rerouted — and who benefits</a></h2>
-        <p class="dek">Shipping lanes that felt permanent a decade ago are shifting again, as manufacturers and freight operators quietly rebuild around new chokepoints, tariffs, and climate risk.</p>
-        <div class="byline"><b>Stream26 Global Desk</b> · 6 min read</div>
+        <span class="kicker">Global Affairs</span>
+        <h2 class="headline-xl"><a href="article-global-hormuz-trade.html">Six months in, Strait of Hormuz disruption still reshaping global shipping</a></h2>
+        <p class="dek">A vital trade corridor has run at reduced capacity for half a year, with ripple effects on fuel prices and shipping costs still being felt worldwide.</p>
+        <div class="byline"><b>Stream26 Global Desk</b> · 4 min read</div>
       </article>
 
       <div class="hero-side">
         <div class="side-story">
-          <div class="art b"></div>
+          <div class="art b"><span class="art-label">US-Canada tariffs</span></div>
           <div>
-            <h3><a href="#">What rate decisions by major central banks mean for everyday households</a></h3>
-            <div class="byline">Global Desk · 4 min</div>
+            <h3><a href="article-global-us-canada-tariffs.html">US-Canada trade talks collapse, 50% tariffs now in effect</a></h3>
+            <div class="byline">Global Desk · 3 min</div>
           </div>
         </div>
         <div class="side-story">
-          <div class="art c"></div>
+          <div class="art c"><span class="art-label">Farage holds Clacton</span></div>
           <div>
-            <h3><a href="#">The quiet diplomacy behind most trade deals you never hear about</a></h3>
-            <div class="byline">Global Desk · 5 min</div>
+            <h3><a href="article-global-farage-clacton.html">Nigel Farage re-elected MP for Clacton in UK by-election</a></h3>
+            <div class="byline">Global Desk · 2 min</div>
           </div>
         </div>
         <div class="side-story">
-          <div class="art d"></div>
+          <div class="art d"><span class="art-label">Meta on trial</span></div>
           <div>
-            <h3><a href="#">Climate adaptation is now a bigger budget line than climate prevention</a></h3>
-            <div class="byline">Global Desk · 5 min</div>
+            <h3><a href="article-global-meta-trial.html">Meta heads to trial over claims it designed apps to hook young users</a></h3>
+            <div class="byline">Global Desk · 3 min</div>
           </div>
         </div>
       </div>
@@ -223,25 +226,25 @@
     <div class="section-label"><span>African News</span></div>
     <div class="story-grid">
       <article class="card">
-        <div class="art"></div>
-        <span class="kicker">Economy</span>
-        <h3><a href="#">Africa's intra-continental trade agreement, three years on: what's actually changed</a></h3>
-        <p>The African Continental Free Trade Area promised faster, cheaper trade between neighboring countries. Here's an honest look at where implementation stands.</p>
-        <div class="byline">Africa Desk · 5 min</div>
+        <div class="art"><span class="art-label">Zambia re-elects Hichilema</span></div>
+        <span class="kicker">Politics</span>
+        <h3><a href="article-africa-zambia-election.html">Hakainde Hichilema wins second term as president of Zambia</a></h3>
+        <p>Hichilema secured roughly 60% of the vote as counting concluded, after officials' safety was briefly threatened mid-count.</p>
+        <div class="byline">Africa Desk · 3 min</div>
       </article>
       <article class="card">
-        <div class="art b"></div>
+        <div class="art b"><span class="art-label">African fintech</span></div>
         <span class="kicker">Technology</span>
         <h3><a href="#">Mobile money reshaped African banking. What comes after it?</a></h3>
         <p>A generation skipped traditional banking entirely. Now fintech firms across the continent are racing to build what's next.</p>
         <div class="byline">Africa Desk · 5 min</div>
       </article>
       <article class="card">
-        <div class="art c"></div>
-        <span class="kicker">Energy</span>
-        <h3><a href="#">The off-grid solar boom powering homes traditional grids never reached</a></h3>
-        <p>Millions of households across the continent now get power from pay-as-you-go solar systems rather than a national grid connection.</p>
-        <div class="byline">Africa Desk · 4 min</div>
+        <div class="art c"><span class="art-label">CAR mine collapse</span></div>
+        <span class="kicker">Developing</span>
+        <h3><a href="article-africa-car-mine-collapse.html">Death toll passes 100 after gold mine collapse in Central African Republic</a></h3>
+        <p>Rescue teams are still recovering bodies from the site, with the toll described as rising as operations continue.</p>
+        <div class="byline">Africa Desk · 3 min</div>
       </article>
     </div>
   </section>
@@ -250,13 +253,13 @@
     <div class="section-label"><span>Nigeria Top News</span></div>
     <div class="headline-list">
       <div>
-        <div class="headline-row"><span class="num">01</span><a href="#">Understanding Nigeria's naira and why exchange rates move the way they do</a></div>
+        <div class="headline-row"><span class="num">01</span><a href="article-nigeria-defence-plan.html">Tinubu orders national threat assessment and five-year defence strategy</a></div>
         <div class="headline-row"><span class="num">02</span><a href="#">Lagos, Abuja, Port Harcourt: how Nigeria's biggest cities are each growing differently</a></div>
         <div class="headline-row"><span class="num">03</span><a href="#">Nollywood's export boom: how Nigerian film reaches global streaming audiences</a></div>
         <div class="headline-row"><span class="num">04</span><a href="#">What Nigeria's young population means for its economy over the next decade</a></div>
       </div>
       <div>
-        <div class="headline-row"><span class="num">05</span><a href="#">Inside Nigeria's tech ecosystem: the startups drawing international investors</a></div>
+        <div class="headline-row"><span class="num">05</span><a href="article-nigeria-nonoil-exports.html">Why Nigeria's non-oil exports are quietly becoming a bigger story than oil</a></div>
         <div class="headline-row"><span class="num">06</span><a href="#">Power supply reform in Nigeria: progress, setbacks, and what's next</a></div>
         <div class="headline-row"><span class="num">07</span><a href="#">Nigeria's agriculture sector is bigger than its oil sector — most people don't realize it</a></div>
         <div class="headline-row"><span class="num">08</span><a href="#">A short guide to how Nigeria's federal elections actually work</a></div>
@@ -271,11 +274,11 @@
     <div class="section-label"><span>Sports/Football</span></div>
     <div class="headline-list">
       <div>
-        <div class="headline-row"><span class="num">01</span><a href="#">How African clubs are building academies that feed directly into Europe's top leagues</a></div>
-        <div class="headline-row"><span class="num">02</span><a href="#">Nigeria's Super Eagles and the long road back to major tournament form</a></div>
+        <div class="headline-row"><span class="num">01</span><a href="article-sports-isak-transfer.html">Liverpool break the British transfer record to sign Alexander Isak</a></div>
+        <div class="headline-row"><span class="num">02</span><a href="article-sports-rogers-transfer.html">Chelsea make Morgan Rogers the most expensive British footballer ever</a></div>
       </div>
       <div>
-        <div class="headline-row"><span class="num">03</span><a href="#">Inside the transfer market: how African talent is scouted and valued today</a></div>
+        <div class="headline-row"><span class="num">03</span><a href="article-sports-matchday1-premier-league.html">Premier League 2026/27 kicks off: Matchday 1 in full swing</a></div>
         <div class="headline-row"><span class="num">04</span><a href="#">Why local league attendance is rising even as fans watch more football abroad</a></div>
       </div>
     </div>
