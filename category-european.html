@@ -24,6 +24,15 @@ nav.primary .wrap{display:flex;gap:2px;overflow-x:auto;}
 nav.primary a{font-size:13px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;padding:14px 16px;white-space:nowrap;border-bottom:2px solid transparent;}
 nav.primary a.active{color:var(--red);border-bottom-color:var(--red);}
 nav.primary a:hover{color:var(--red);}
+.search-wrap{position:relative;display:flex;align-items:center;margin-left:auto;padding:8px 0;}
+.search-input{width:140px;max-width:35vw;border:1px solid var(--rule);border-radius:20px;padding:7px 14px;font-family:'Public Sans',sans-serif;font-size:13px;background:var(--paper-dim);outline:none;}
+.search-input:focus{width:200px;max-width:55vw;border-color:var(--red);background:#fff;}
+.search-results{position:absolute;top:calc(100% + 6px);right:0;width:300px;max-width:80vw;max-height:400px;overflow-y:auto;background:#fff;border:1px solid var(--rule);border-radius:6px;box-shadow:0 8px 30px rgba(0,0,0,.15);display:none;z-index:50;}
+.search-results.active{display:block;}
+.search-result-item{display:block;padding:12px 16px;border-bottom:1px solid var(--rule);}
+.search-result-item .sr-cat{font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:600;color:var(--red);text-transform:uppercase;}
+.search-result-item .sr-headline{font-family:'Fraunces',serif;font-size:14px;font-weight:600;margin-top:3px;}
+.search-no-results{padding:16px;font-size:13px;color:var(--ink-soft);text-align:center;}
 .page-head{padding:44px 0 8px;}
 .page-head h1{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(28px,4.5vw,44px);margin-bottom:8px;}
 .page-head p{color:var(--ink-soft);font-size:15px;}
@@ -60,6 +69,10 @@ footer.site img{height:30px;}
     <a href="category-european.html" class="active">European News</a>
     <a href="category-nigeria.html">Nigeria Top News</a>
     <a href="category-sports.html">Sports/Football</a>
+    <div class="search-wrap">
+      <input type="text" id="siteSearch" class="search-input" placeholder="Search news…" autocomplete="off">
+      <div id="searchResults" class="search-results"></div>
+    </div>
   </div>
 </nav>
 
@@ -70,7 +83,7 @@ footer.site img{height:30px;}
 
 <div class="wrap story-list">
       <div class="story-row">
-        <div class="thumb"></div>
+        <div class="thumb" style="background-image:url('banner2-google-eu.jpg')"></div>
         <div>
           <span class="badge verified">Verified</span>
           <h3><a href="article-europe-google-search-policy.html">Google Changes European Search Policy After EU Pressure</a></h3>
@@ -79,7 +92,7 @@ footer.site img{height:30px;}
         </div>
       </div>
       <div class="story-row">
-        <div class="thumb"></div>
+        <div class="thumb" style="background-image:url('banner2-norway.jpg')"></div>
         <div>
           <span class="badge verified">Verified</span>
           <h3><a href="article-europe-norway-king.html">Norway Enters New Royal Era After Death of King Harald</a></h3>
@@ -88,7 +101,7 @@ footer.site img{height:30px;}
         </div>
       </div>
       <div class="story-row">
-        <div class="thumb"></div>
+        <div class="thumb" style="background-image:url('banner2-russia-britain.jpg')"></div>
         <div>
           <span class="badge verified">Verified</span>
           <h3><a href="article-europe-russia-britain-warning.html">Russia Warns Britain Over Ukraine Missile Support</a></h3>
@@ -97,7 +110,7 @@ footer.site img{height:30px;}
         </div>
       </div>
       <div class="story-row">
-        <div class="thumb"></div>
+        <div class="thumb" style="background-image:url('banner2-ukraine-assault.jpg')"></div>
         <div>
           <span class="badge verified">Verified</span>
           <h3><a href="article-europe-ukraine-air-assault.html">Ukraine Under Heavy Russian Air Assault as Air-Defence Pressure Grows</a></h3>
@@ -106,7 +119,7 @@ footer.site img{height:30px;}
         </div>
       </div>
       <div class="story-row">
-        <div class="thumb"></div>
+        <div class="thumb" style="background-image:url('banner2-ukraine-talks.jpg')"></div>
         <div>
           <span class="badge developing">Developing Story</span>
           <h3><a href="article-europe-ukraine-september-talks.html">Ukraine Signals September Window for Renewed Peace Talks</a></h3>
@@ -122,6 +135,23 @@ footer.site img{height:30px;}
     <div>© 2026 Stream26 News. All rights reserved.</div>
   </div>
 </footer>
+
+<script>
+  let searchIndex = [];
+  fetch('search-index.json').then(r => r.json()).then(data => { searchIndex = data; }).catch(() => {});
+  const searchInput = document.getElementById('siteSearch');
+  const searchResults = document.getElementById('searchResults');
+  searchInput.addEventListener('input', function(){
+    const q = this.value.trim().toLowerCase();
+    if(q.length < 2){ searchResults.classList.remove('active'); searchResults.innerHTML=''; return; }
+    const matches = searchIndex.filter(item => item.headline.toLowerCase().includes(q) || item.desc.toLowerCase().includes(q) || item.category.toLowerCase().includes(q)).slice(0,8);
+    searchResults.innerHTML = matches.length === 0
+      ? '<div class="search-no-results">No matching stories found.</div>'
+      : matches.map(item => `<a class="search-result-item" href="${item.slug}"><div class="sr-cat">${item.category}</div><div class="sr-headline">${item.headline}</div></a>`).join('');
+    searchResults.classList.add('active');
+  });
+  document.addEventListener('click', function(e){ if(!e.target.closest('.search-wrap')) searchResults.classList.remove('active'); });
+</script>
 
 </body>
 </html>
