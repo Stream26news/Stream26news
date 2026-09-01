@@ -60,6 +60,14 @@ footer.site img{height:30px;}
 .invite-box .contact-line{font-family:'IBM Plex Mono',monospace;font-size:14px;color:var(--ink);font-weight:600;}
 .invite-box a{color:var(--red);}
 </style>
+
+<style>
+.follow-us{display:flex;gap:10px;}
+.follow-us a{width:28px;height:28px;border-radius:50%;background:var(--paper-dim);display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:700;color:var(--ink);border:1px solid var(--rule);text-decoration:none;}
+.follow-us a:hover{background:var(--red);color:#fff;border-color:var(--red);}
+.headline-share{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:var(--paper-dim);border:1px solid var(--rule);font-size:10px;cursor:pointer;margin-left:6px;vertical-align:middle;flex-shrink:0;}
+.headline-share:hover{background:var(--red);border-color:var(--red);}
+</style>
 </head>
 <body>
 
@@ -129,5 +137,15 @@ footer.site img{height:30px;}
   document.addEventListener('click', function(e){ if(!e.target.closest('.search-wrap')) searchResults.classList.remove('active'); });
 </script>
 
+
+<script>
+function shareHeadline(url, title, btn){
+  if(navigator.share){
+    navigator.share({title: title, url: url}).catch(function(){});
+  } else {
+    window.open('https://wa.me/?text=' + encodeURIComponent(title + ' — ' + url), '_blank');
+  }
+}
+</script>
 </body>
 </html>

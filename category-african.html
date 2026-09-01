@@ -4,6 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="African News — Elections, crises, and the stories shaping the continent.">
+<meta property="og:site_name" content="Stream26 News">
+<meta property="og:title" content="African News — Stream26 News">
+<meta property="og:description" content="Elections, crises, and the stories shaping the continent.">
+<meta property="og:image" content="https://stream26news.pages.dev/logo-wide.png">
+<meta property="og:type" content="website">
 <title>African News — Stream26 News</title>
 <link rel="icon" type="image/png" href="logo-mark.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,6 +59,14 @@ footer.site .wrap{display:flex;justify-content:space-between;align-items:center;
 footer.site img{height:30px;}
 @media (max-width:600px){.story-row{grid-template-columns:100px 1fr;}.story-row .thumb{width:100px;height:76px;}}
 </style>
+
+<style>
+.follow-us{display:flex;gap:10px;}
+.follow-us a{width:28px;height:28px;border-radius:50%;background:var(--paper-dim);display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:700;color:var(--ink);border:1px solid var(--rule);text-decoration:none;}
+.follow-us a:hover{background:var(--red);color:#fff;border-color:var(--red);}
+.headline-share{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:var(--paper-dim);border:1px solid var(--rule);font-size:10px;cursor:pointer;margin-left:6px;vertical-align:middle;flex-shrink:0;}
+.headline-share:hover{background:var(--red);border-color:var(--red);}
+</style>
 </head>
 <body>
 
@@ -90,7 +103,7 @@ footer.site img{height:30px;}
         <div class="thumb" style="background-image:url('banner-carmine.jpg')"></div>
         <div>
           <span class="badge developing">Developing Story</span>
-          <h3><a href="article-africa-car-mine-collapse.html">Death Toll Disputed After Central African Republic Gold Mine Collapse</a></h3>
+          <h3><a href="article-africa-car-mine-collapse.html">Death Toll Disputed After Central African Republic Gold Mine Collapse</a><span class="headline-share" onclick="shareHeadline('https://stream26news.pages.dev/article-africa-car-mine-collapse.html', 'Death Toll Disputed After Central African Republic Gold Mine Collapse')" title="Share">↗</span></h3>
           <p>At least 107 people are reported dead after an artisanal gold mine collapsed in the Central African Republic, with rescue efforts ongoing.</p>
           <div class="byline">Stream26 Africa Desk</div>
         </div>
@@ -99,7 +112,7 @@ footer.site img{height:30px;}
         <div class="thumb" style="background-image:url('banner2-ebola.jpg')"></div>
         <div>
           <span class="badge developing">Developing Story</span>
-          <h3><a href="article-africa-ebola-drc.html">Ebola Outbreak in Eastern Congo Raises Fears Over School Reopening</a></h3>
+          <h3><a href="article-africa-ebola-drc.html">Ebola Outbreak in Eastern Congo Raises Fears Over School Reopening</a><span class="headline-share" onclick="shareHeadline('https://stream26news.pages.dev/article-africa-ebola-drc.html', 'Ebola Outbreak in Eastern Congo Raises Fears Over School Reopening')" title="Share">↗</span></h3>
           <p>Parents and teachers in eastern DRC are calling for schools to delay reopening as health authorities battle a rapidly expanding Ebola outbreak with no approved vaccine.</p>
           <div class="byline">Stream26 Africa Desk</div>
         </div>
@@ -108,7 +121,7 @@ footer.site img{height:30px;}
         <div class="thumb" style="background-image:url('banner2-zambia.jpg')"></div>
         <div>
           <span class="badge developing">Developing Story</span>
-          <h3><a href="article-africa-zambia-election.html">Zambia's Opposition Crisis Deepens as Mundubile Faces Treason Allegation</a></h3>
+          <h3><a href="article-africa-zambia-election.html">Zambia's Opposition Crisis Deepens as Mundubile Faces Treason Allegation</a><span class="headline-share" onclick="shareHeadline('https://stream26news.pages.dev/article-africa-zambia-election.html', 'Zambia\'s Opposition Crisis Deepens as Mundubile Faces Treason Allegation')" title="Share">↗</span></h3>
           <p>Zambia's post-election crisis has escalated after opposition leader Brian Mundubile was detained over an alleged treason offence, with a former minister killed in the security operation.</p>
           <div class="byline">Stream26 Africa Desk</div>
         </div>
@@ -117,7 +130,7 @@ footer.site img{height:30px;}
         <div class="thumb" style="background-image:url('banner2-kidnapping-final.jpg')"></div>
         <div>
           <span class="badge verified">Verified</span>
-          <h3><a href="article-nigeria-kidnapping-economy.html">Nigeria's Kidnapping Economy Reaches Alarming Scale Across Multiple Regions</a></h3>
+          <h3><a href="article-nigeria-kidnapping-economy.html">Nigeria's Kidnapping Economy Reaches Alarming Scale Across Multiple Regions</a><span class="headline-share" onclick="shareHeadline('https://stream26news.pages.dev/article-nigeria-kidnapping-economy.html', 'Nigeria\'s Kidnapping Economy Reaches Alarming Scale Across Multiple Regions')" title="Share">↗</span></h3>
           <p>New research reviewed by Stream26 News finds 7,825 people were kidnapped in Nigeria in a single year, with confirmed ransom payments reaching ₦7.78 billion.</p>
           <div class="byline">Stream26 Nigeria Desk</div>
         </div>
@@ -153,5 +166,15 @@ footer.site img{height:30px;}
   document.addEventListener('click', function(e){ if(!e.target.closest('.search-wrap')) searchResults.classList.remove('active'); });
 </script>
 
+
+<script>
+function shareHeadline(url, title, btn){
+  if(navigator.share){
+    navigator.share({title: title, url: url}).catch(function(){});
+  } else {
+    window.open('https://wa.me/?text=' + encodeURIComponent(title + ' — ' + url), '_blank');
+  }
+}
+</script>
 </body>
 </html>

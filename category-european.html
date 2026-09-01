@@ -4,6 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="European News — Politics, conflict, and regulation across Europe.">
+<meta property="og:site_name" content="Stream26 News">
+<meta property="og:title" content="European News — Stream26 News">
+<meta property="og:description" content="Politics, conflict, and regulation across Europe.">
+<meta property="og:image" content="https://stream26news.pages.dev/logo-wide.png">
+<meta property="og:type" content="website">
 <title>European News — Stream26 News</title>
 <link rel="icon" type="image/png" href="logo-mark.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,6 +59,14 @@ footer.site .wrap{display:flex;justify-content:space-between;align-items:center;
 footer.site img{height:30px;}
 @media (max-width:600px){.story-row{grid-template-columns:100px 1fr;}.story-row .thumb{width:100px;height:76px;}}
 </style>
+
+<style>
+.follow-us{display:flex;gap:10px;}
+.follow-us a{width:28px;height:28px;border-radius:50%;background:var(--paper-dim);display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:700;color:var(--ink);border:1px solid var(--rule);text-decoration:none;}
+.follow-us a:hover{background:var(--red);color:#fff;border-color:var(--red);}
+.headline-share{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:var(--paper-dim);border:1px solid var(--rule);font-size:10px;cursor:pointer;margin-left:6px;vertical-align:middle;flex-shrink:0;}
+.headline-share:hover{background:var(--red);border-color:var(--red);}
+</style>
 </head>
 <body>
 
@@ -90,7 +103,7 @@ footer.site img{height:30px;}
         <div class="thumb" style="background-image:url('banner2-google-eu.jpg')"></div>
         <div>
           <span class="badge verified">Verified</span>
-          <h3><a href="article-europe-google-search-policy.html">Google Changes European Search Policy After EU Pressure</a></h3>
+          <h3><a href="article-europe-google-search-policy.html">Google Changes European Search Policy After EU Pressure</a><span class="headline-share" onclick="shareHeadline('https://stream26news.pages.dev/article-europe-google-search-policy.html', 'Google Changes European Search Policy After EU Pressure')" title="Share">↗</span></h3>
           <p>Google is changing how it applies part of its search spam policy across the European Economic Area after regulators raised concerns about the system's impact on publishers.</p>
           <div class="byline">Stream26 Europe Desk</div>
         </div>
@@ -99,7 +112,7 @@ footer.site img{height:30px;}
         <div class="thumb" style="background-image:url('banner2-norway.jpg')"></div>
         <div>
           <span class="badge verified">Verified</span>
-          <h3><a href="article-europe-norway-king.html">Norway Enters New Royal Era After Death of King Harald</a></h3>
+          <h3><a href="article-europe-norway-king.html">Norway Enters New Royal Era After Death of King Harald</a><span class="headline-share" onclick="shareHeadline('https://stream26news.pages.dev/article-europe-norway-king.html', 'Norway Enters New Royal Era After Death of King Harald')" title="Share">↗</span></h3>
           <p>Norway has entered a new chapter after the death of King Harald V, ending a reign that lasted more than three decades. Crown Prince Haakon is now King.</p>
           <div class="byline">Stream26 Europe Desk</div>
         </div>
@@ -108,7 +121,7 @@ footer.site img{height:30px;}
         <div class="thumb" style="background-image:url('banner2-russia-britain.jpg')"></div>
         <div>
           <span class="badge verified">Verified</span>
-          <h3><a href="article-europe-russia-britain-warning.html">Russia Warns Britain Over Ukraine Missile Support</a></h3>
+          <h3><a href="article-europe-russia-britain-warning.html">Russia Warns Britain Over Ukraine Missile Support</a><span class="headline-share" onclick="shareHeadline('https://stream26news.pages.dev/article-europe-russia-britain-warning.html', 'Russia Warns Britain Over Ukraine Missile Support')" title="Share">↗</span></h3>
           <p>Russia has warned that British military facilities could become targets if Ukraine continues using British-supplied long-range missiles against Russian territory.</p>
           <div class="byline">Stream26 Europe Desk</div>
         </div>
@@ -117,7 +130,7 @@ footer.site img{height:30px;}
         <div class="thumb" style="background-image:url('banner2-ukraine-assault.jpg')"></div>
         <div>
           <span class="badge verified">Verified</span>
-          <h3><a href="article-europe-ukraine-air-assault.html">Ukraine Under Heavy Russian Air Assault as Air-Defence Pressure Grows</a></h3>
+          <h3><a href="article-europe-ukraine-air-assault.html">Ukraine Under Heavy Russian Air Assault as Air-Defence Pressure Grows</a><span class="headline-share" onclick="shareHeadline('https://stream26news.pages.dev/article-europe-ukraine-air-assault.html', 'Ukraine Under Heavy Russian Air Assault as Air-Defence Pressure Grows')" title="Share">↗</span></h3>
           <p>Ukraine has endured another major Russian air assault involving a large number of drones and missiles, as Kyiv's air-defence network faces mounting strain.</p>
           <div class="byline">Stream26 Europe Desk</div>
         </div>
@@ -126,7 +139,7 @@ footer.site img{height:30px;}
         <div class="thumb" style="background-image:url('banner2-ukraine-talks.jpg')"></div>
         <div>
           <span class="badge developing">Developing Story</span>
-          <h3><a href="article-europe-ukraine-september-talks.html">Ukraine Signals September Window for Renewed Peace Talks</a></h3>
+          <h3><a href="article-europe-ukraine-september-talks.html">Ukraine Signals September Window for Renewed Peace Talks</a><span class="headline-share" onclick="shareHeadline('https://stream26news.pages.dev/article-europe-ukraine-september-talks.html', 'Ukraine Signals September Window for Renewed Peace Talks')" title="Share">↗</span></h3>
           <p>Ukraine believes another round of talks involving Russia and the United States could become possible in September, though no peace summit has been confirmed.</p>
           <div class="byline">Stream26 Europe Desk</div>
         </div>
@@ -162,5 +175,15 @@ footer.site img{height:30px;}
   document.addEventListener('click', function(e){ if(!e.target.closest('.search-wrap')) searchResults.classList.remove('active'); });
 </script>
 
+
+<script>
+function shareHeadline(url, title, btn){
+  if(navigator.share){
+    navigator.share({title: title, url: url}).catch(function(){});
+  } else {
+    window.open('https://wa.me/?text=' + encodeURIComponent(title + ' — ' + url), '_blank');
+  }
+}
+</script>
 </body>
 </html>

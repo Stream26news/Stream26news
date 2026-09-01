@@ -4,6 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Global News — World affairs, markets, and power, reported clearly.">
+<meta property="og:site_name" content="Stream26 News">
+<meta property="og:title" content="Global News — Stream26 News">
+<meta property="og:description" content="World affairs, markets, and power, reported clearly.">
+<meta property="og:image" content="https://stream26news.pages.dev/logo-wide.png">
+<meta property="og:type" content="website">
 <title>Global News — Stream26 News</title>
 <link rel="icon" type="image/png" href="logo-mark.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,6 +59,14 @@ footer.site .wrap{display:flex;justify-content:space-between;align-items:center;
 footer.site img{height:30px;}
 @media (max-width:600px){.story-row{grid-template-columns:100px 1fr;}.story-row .thumb{width:100px;height:76px;}}
 </style>
+
+<style>
+.follow-us{display:flex;gap:10px;}
+.follow-us a{width:28px;height:28px;border-radius:50%;background:var(--paper-dim);display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:700;color:var(--ink);border:1px solid var(--rule);text-decoration:none;}
+.follow-us a:hover{background:var(--red);color:#fff;border-color:var(--red);}
+.headline-share{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:var(--paper-dim);border:1px solid var(--rule);font-size:10px;cursor:pointer;margin-left:6px;vertical-align:middle;flex-shrink:0;}
+.headline-share:hover{background:var(--red);border-color:var(--red);}
+</style>
 </head>
 <body>
 
@@ -90,7 +103,7 @@ footer.site img{height:30px;}
         <div class="thumb" style="background-image:url('banner-farage.jpg')"></div>
         <div>
           <span class="badge verified">Verified</span>
-          <h3><a href="article-global-farage-clacton.html">Nigel Farage Re-Elected MP for Clacton in UK By-Election</a></h3>
+          <h3><a href="article-global-farage-clacton.html">Nigel Farage Re-Elected MP for Clacton in UK By-Election</a><span class="headline-share" onclick="shareHeadline('https://stream26news.pages.dev/article-global-farage-clacton.html', 'Nigel Farage Re-Elected MP for Clacton in UK By-Election')" title="Share">↗</span></h3>
           <p>Reform UK leader Nigel Farage has been re-elected as Member of Parliament for Clacton following a by-election.</p>
           <div class="byline">Stream26 Global Desk</div>
         </div>
@@ -99,7 +112,7 @@ footer.site img{height:30px;}
         <div class="thumb" style="background-image:url('banner-hormuz.jpg')"></div>
         <div>
           <span class="badge verified">Verified</span>
-          <h3><a href="article-global-hormuz-trade.html">Six Months In, Strait of Hormuz Disruption Still Reshaping Global Shipping</a></h3>
+          <h3><a href="article-global-hormuz-trade.html">Six Months In, Strait of Hormuz Disruption Still Reshaping Global Shipping</a><span class="headline-share" onclick="shareHeadline('https://stream26news.pages.dev/article-global-hormuz-trade.html', 'Six Months In, Strait of Hormuz Disruption Still Reshaping Global Shipping')" title="Share">↗</span></h3>
           <p>A prolonged disruption to traffic through the Strait of Hormuz has kept one of the world's busiest shipping corridors running at a fraction of normal capacity.</p>
           <div class="byline">Stream26 Global Desk</div>
         </div>
@@ -108,7 +121,7 @@ footer.site img{height:30px;}
         <div class="thumb" style="background-image:url('banner-meta.jpg')"></div>
         <div>
           <span class="badge verified">Verified</span>
-          <h3><a href="article-global-meta-trial.html">Meta Faces Trial as $18 Billion Child-Safety Settlement Emerges</a></h3>
+          <h3><a href="article-global-meta-trial.html">Meta Faces Trial as $18 Billion Child-Safety Settlement Emerges</a><span class="headline-share" onclick="shareHeadline('https://stream26news.pages.dev/article-global-meta-trial.html', 'Meta Faces Trial as $18 Billion Child-Safety Settlement Emerges')" title="Share">↗</span></h3>
           <p>Meta has agreed to a settlement worth up to $18 billion over claims Facebook and Instagram were designed to keep minors engaged, alongside an ongoing California trial.</p>
           <div class="byline">Stream26 Global Desk</div>
         </div>
@@ -117,7 +130,7 @@ footer.site img{height:30px;}
         <div class="thumb" style="background-image:url('banner2-nepal.jpg')"></div>
         <div>
           <span class="badge developing">Developing Story</span>
-          <h3><a href="article-global-nepal-floods.html">Nepal Disaster: Search Intensifies as Hundreds Remain Missing After Devastating Floods</a></h3>
+          <h3><a href="article-global-nepal-floods.html">Nepal Disaster: Search Intensifies as Hundreds Remain Missing After Devastating Floods</a><span class="headline-share" onclick="shareHeadline('https://stream26news.pages.dev/article-global-nepal-floods.html', 'Nepal Disaster: Search Intensifies as Hundreds Remain Missing After Devastating Floods')" title="Share">↗</span></h3>
           <p>Rescue teams in Nepal's Himalayan region are racing against time after catastrophic flooding and debris flows destroyed communities and left a large number of people missing.</p>
           <div class="byline">Stream26 Global Desk</div>
         </div>
@@ -126,7 +139,7 @@ footer.site img{height:30px;}
         <div class="thumb" style="background-image:url('banner2-taiwan.jpg')"></div>
         <div>
           <span class="badge verified">Verified</span>
-          <h3><a href="article-global-taiwan-penghu.html">Taiwan Fortifies Penghu as Military Prepares for the Possibility of a Chinese Attack</a></h3>
+          <h3><a href="article-global-taiwan-penghu.html">Taiwan Fortifies Penghu as Military Prepares for the Possibility of a Chinese Attack</a><span class="headline-share" onclick="shareHeadline('https://stream26news.pages.dev/article-global-taiwan-penghu.html', 'Taiwan Fortifies Penghu as Military Prepares for the Possibility of a Chinese Attack')" title="Share">↗</span></h3>
           <p>Taiwan is strengthening military and civilian preparations around the Penghu Islands as planners assess how the strategically important island group could be defended.</p>
           <div class="byline">Stream26 Global Desk</div>
         </div>
@@ -135,7 +148,7 @@ footer.site img{height:30px;}
         <div class="thumb" style="background-image:url('banner2-un-payment.jpg')"></div>
         <div>
           <span class="badge developing">Developing Story</span>
-          <h3><a href="article-global-un-payment.html">UN Awaits $725 Million U.S. Payment as Financial Pressure Deepens</a></h3>
+          <h3><a href="article-global-un-payment.html">UN Awaits $725 Million U.S. Payment as Financial Pressure Deepens</a><span class="headline-share" onclick="shareHeadline('https://stream26news.pages.dev/article-global-un-payment.html', 'UN Awaits $725 Million U.S. Payment as Financial Pressure Deepens')" title="Share">↗</span></h3>
           <p>The United Nations expects a $725 million U.S. payment toward its outstanding contribution, but the money had not yet arrived when the latest information was available.</p>
           <div class="byline">Stream26 Global Desk</div>
         </div>
@@ -144,7 +157,7 @@ footer.site img{height:30px;}
         <div class="thumb" style="background-image:url('banner-tariffs.jpg')"></div>
         <div>
           <span class="badge verified">Verified</span>
-          <h3><a href="article-global-us-canada-tariffs.html">US-Canada Trade Talks Collapse, 50% Tariffs Now in Effect</a></h3>
+          <h3><a href="article-global-us-canada-tariffs.html">US-Canada Trade Talks Collapse, 50% Tariffs Now in Effect</a><span class="headline-share" onclick="shareHeadline('https://stream26news.pages.dev/article-global-us-canada-tariffs.html', 'US-Canada Trade Talks Collapse, 50% Tariffs Now in Effect')" title="Share">↗</span></h3>
           <p>Trade talks between the US and Canada collapsed just before a midnight deadline, triggering 50% tariffs on $20 billion of Canadian goods.</p>
           <div class="byline">Stream26 Global Desk</div>
         </div>
@@ -180,5 +193,15 @@ footer.site img{height:30px;}
   document.addEventListener('click', function(e){ if(!e.target.closest('.search-wrap')) searchResults.classList.remove('active'); });
 </script>
 
+
+<script>
+function shareHeadline(url, title, btn){
+  if(navigator.share){
+    navigator.share({title: title, url: url}).catch(function(){});
+  } else {
+    window.open('https://wa.me/?text=' + encodeURIComponent(title + ' — ' + url), '_blank');
+  }
+}
+</script>
 </body>
 </html>
