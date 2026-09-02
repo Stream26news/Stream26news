@@ -10,6 +10,20 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
+
+.social-bar{display:flex;align-items:center;gap:14px;padding:14px 0;flex-wrap:wrap;}
+.social-label{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);}
+.social-icons{display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+.social-icon-link{display:inline-flex;align-items:center;justify-content:center;transition:transform .15s ease;border:none;background:none;padding:0;cursor:pointer;text-decoration:none;}
+.social-icon-link:hover{transform:scale(1.14);}
+.social-icon-link svg{display:block;}
+.copy-btn{width:20px;height:20px;border-radius:50%;background:var(--paper-dim);border:1px solid var(--rule);font-size:11px;}
+.opinion-link{display:inline-flex;align-items:center;gap:6px;background:#25D366;color:#fff!important;padding:5px 12px 5px 6px;border-radius:20px;font-family:'Public Sans',sans-serif;font-size:12px;font-weight:600;text-decoration:none;}
+.opinion-link svg{transform:scale(.85);}
+.top-share{margin:20px 0;}
+.bottom-share{margin:28px 0 8px;}
+
+
 :root{--paper:#FFFFFF;--paper-dim:#F6F6F6;--ink:#141414;--ink-soft:#5A5A5A;--rule:#E4E4E4;--red:#E30613;--red-dark:#A50410;--max:1240px;}
 *{box-sizing:border-box;margin:0;padding:0;}
 body{background:var(--paper);color:var(--ink);font-family:'Public Sans',sans-serif;-webkit-font-smoothing:antialiased;}
@@ -60,14 +74,7 @@ footer.site img{height:30px;}
 .invite-box .contact-line{font-family:'IBM Plex Mono',monospace;font-size:14px;color:var(--ink);font-weight:600;}
 .invite-box a{color:var(--red);}
 </style>
-
-<style>
-.follow-us{display:flex;gap:10px;}
-.follow-us a{width:28px;height:28px;border-radius:50%;background:var(--paper-dim);display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:700;color:var(--ink);border:1px solid var(--rule);text-decoration:none;}
-.follow-us a:hover{background:var(--red);color:#fff;border-color:var(--red);}
-.headline-share{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:var(--paper-dim);border:1px solid var(--rule);font-size:10px;cursor:pointer;margin-left:6px;vertical-align:middle;flex-shrink:0;}
-.headline-share:hover{background:var(--red);border-color:var(--red);}
-</style>
+<style>.headline-share{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:var(--paper-dim);border:1px solid var(--rule);font-size:10px;cursor:pointer;margin-left:6px;vertical-align:middle;flex-shrink:0;}.headline-share:hover{background:var(--red);border-color:var(--red);}</style>
 </head>
 <body>
 
@@ -112,13 +119,6 @@ footer.site img{height:30px;}
   <div class="wrap">
     <a href="index.html"><img src="logo-wide.png" alt="Stream26 News"></a>
     <div>© 2026 Stream26 News. All rights reserved.</div>
-    <div class="follow-us">
-      <a href="https://www.facebook.com/share/1EgCjsYHHz/" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
-      <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn">LI</a>
-      <a href="#" target="_blank" rel="noopener" aria-label="X">X</a>
-      <a href="https://whatsapp.com/channel/0029Vb8ZBix1noz2zGpDRb0m" target="_blank" rel="noopener" aria-label="WhatsApp Channel">WA</a>
-    </div>
-
   </div>
 </footer>
 

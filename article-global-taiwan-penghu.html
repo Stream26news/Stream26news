@@ -38,6 +38,20 @@
 }
 </script>
 <style>
+
+.social-bar{display:flex;align-items:center;gap:14px;padding:14px 0;flex-wrap:wrap;}
+.social-label{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);}
+.social-icons{display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+.social-icon-link{display:inline-flex;align-items:center;justify-content:center;transition:transform .15s ease;border:none;background:none;padding:0;cursor:pointer;text-decoration:none;}
+.social-icon-link:hover{transform:scale(1.14);}
+.social-icon-link svg{display:block;}
+.copy-btn{width:20px;height:20px;border-radius:50%;background:var(--paper-dim);border:1px solid var(--rule);font-size:11px;}
+.opinion-link{display:inline-flex;align-items:center;gap:6px;background:#25D366;color:#fff!important;padding:5px 12px 5px 6px;border-radius:20px;font-family:'Public Sans',sans-serif;font-size:12px;font-weight:600;text-decoration:none;}
+.opinion-link svg{transform:scale(.85);}
+.top-share{margin:20px 0;}
+.bottom-share{margin:28px 0 8px;}
+
+
 :root{--paper:#FFFFFF;--paper-dim:#F6F6F6;--ink:#141414;--ink-soft:#5A5A5A;--rule:#E4E4E4;--red:#E30613;--red-dark:#A50410;--max:820px;}
 *{box-sizing:border-box;margin:0;padding:0;}
 body{background:var(--paper);color:var(--ink);font-family:'Public Sans',sans-serif;-webkit-font-smoothing:antialiased;}
@@ -122,6 +136,18 @@ footer.site img{height:34px;}
     <div class="banner-text">Preparation and deterrence, not confirmation of imminent conflict</div>
   </div>
 
+  <div class="social-bar share-bar-v2 top-share">
+  <span class="social-label">Share</span>
+  <div class="social-icons">
+    <a class="social-icon-link" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fstream26news.pages.dev%2Farticle-global-taiwan-penghu.html" target="_blank" rel="noopener" aria-label="Share on Facebook"><svg viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="12" r="12" fill="#1877F2"/><path fill="#fff" d="M13.5 21v-7.6h2.6l.4-3h-3v-1.9c0-.9.25-1.5 1.55-1.5H16.6V4.3c-.28-.04-1.25-.12-2.38-.12-2.36 0-3.97 1.44-3.97 4.08v2.14H7.6v3h2.65V21h3.25z"/></svg></a>
+    <a class="social-icon-link" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fstream26news.pages.dev%2Farticle-global-taiwan-penghu.html" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><svg viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="12" r="12" fill="#0A66C2"/><path fill="#fff" d="M7.1 9.6H4.4V19h2.7V9.6zM5.75 5c-.9 0-1.5.6-1.5 1.4 0 .77.58 1.4 1.46 1.4h.02c.93 0 1.5-.63 1.5-1.4C7.2 5.6 6.65 5 5.75 5zM19.5 19h-2.7v-5.05c0-1.2-.42-2-1.48-2-.8 0-1.28.55-1.5 1.08-.08.19-.1.45-.1.72V19H11s.04-8.55 0-9.4h2.72v1.33c.36-.55 1-1.35 2.45-1.35 1.8 0 3.15 1.18 3.15 3.7V19z"/></svg></a>
+    <a class="social-icon-link" href="https://twitter.com/intent/tweet?text=Taiwan%20Fortifies%20Penghu%20as%20Military%20Prepares%20for%20the%20Possibility%20of%20a%20Chinese%20Attack%20%E2%80%94%20https%3A%2F%2Fstream26news.pages.dev%2Farticle-global-taiwan-penghu.html" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="12" r="12" fill="#000"/><path fill="#fff" d="M17.5 6h2.1l-4.6 5.3L20.4 18h-4.2l-3.3-4.3L9.1 18H7l4.9-5.6L6.5 6h4.3l3 4L17.5 6zm-.74 10.7h1.15L9.3 7.24H8.06l8.7 9.46z"/></svg></a>
+    <a class="social-icon-link" href="https://wa.me/?text=Taiwan%20Fortifies%20Penghu%20as%20Military%20Prepares%20for%20the%20Possibility%20of%20a%20Chinese%20Attack%20%E2%80%94%20https%3A%2F%2Fstream26news.pages.dev%2Farticle-global-taiwan-penghu.html" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="12" r="12" fill="#25D366"/><path fill="#fff" d="M17.5 6.5A7.4 7.4 0 0 0 6.2 15.8L5 19l3.3-1.2a7.4 7.4 0 0 0 3.6.9 7.4 7.4 0 0 0 5.6-12.2zm-5.6 11.3a6.1 6.1 0 0 1-3.1-.85l-.22-.13-2.3.8.77-2.24-.14-.23a6.1 6.1 0 1 1 5 2.65zm3.35-4.58c-.18-.1-1.08-.53-1.24-.6-.17-.06-.29-.1-.41.1s-.47.6-.58.72c-.1.13-.21.14-.4.05a5 5 0 0 1-1.47-.9 5.5 5.5 0 0 1-1-1.27c-.1-.18 0-.28.08-.37.08-.08.18-.21.27-.32.09-.1.12-.18.18-.3.06-.13.03-.24-.02-.34-.05-.1-.4-.98-.55-1.35-.15-.35-.3-.3-.41-.31h-.35c-.12 0-.3.05-.47.23-.16.18-.62.6-.62 1.47s.63 1.7.72 1.83c.1.12 1.24 1.9 3 2.66.42.18.75.3 1 .37.42.13.8.11 1.1.07.34-.05 1.08-.44 1.23-.87.15-.42.15-.79.1-.86-.04-.08-.16-.13-.34-.22z"/></svg></a>
+    <a class="social-icon-link" href="https://t.me/share/url?url=https%3A%2F%2Fstream26news.pages.dev%2Farticle-global-taiwan-penghu.html&text=Taiwan%20Fortifies%20Penghu%20as%20Military%20Prepares%20for%20the%20Possibility%20of%20a%20Chinese%20Attack%20%E2%80%94%20https%3A%2F%2Fstream26news.pages.dev%2Farticle-global-taiwan-penghu.html" target="_blank" rel="noopener" aria-label="Share on Telegram"><svg viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="12" r="12" fill="#229ED9"/><path fill="#fff" d="M17.7 7.1 5.9 11.7c-.8.3-.8.8-.15 1l3 .93 1.15 3.6c.14.4.24.55.5.55.24 0 .35-.11.48-.24l1.3-1.26 2.7 2c.5.28.86.13.98-.46l1.78-8.4c.17-.75-.28-1.08-.94-.8z"/></svg></a>
+    <button class="social-icon-link copy-btn" onclick="copyLink('https://stream26news.pages.dev/article-global-taiwan-penghu.html')" aria-label="Copy link" type="button">🔗</button>
+  </div>
+</div>
+
   <div class="ad-slot">Ad slot — insert AdSense unit here after approval</div>
 
   <div class="body-text">
@@ -129,22 +155,27 @@ footer.site img{height:34px;}
       <p>Penghu consists of dozens of islands positioned between Taiwan's main island and the Chinese coast, making it strategically important since control of the archipelago could influence movement across the strait. Taiwanese forces have been conducting live-fire exercises and reinforcing defensive positions, including deploying long-range anti-ship missiles.</p>
       <p>Civilian preparedness is becoming part of the wider defence strategy too. Authorities have been training residents in emergency response, reflecting a broader shift toward preparing society for the possibility of a blockade, missile attack, or invasion, rather than relying exclusively on the military.</p>
       <p>Stream26 News has found no verified evidence that Beijing has ordered an invasion of Taiwan. The current situation is one of preparation, deterrence, and strategic uncertainty — Taiwan's government continues to insist its military preparations are defensive.</p>
+  </div>
+
+  <div class="ad-slot">Ad slot — insert AdSense unit here after approval</div>
+
+  <div class="body-text">
       <p>The larger question is whether those preparations will be sufficient to discourage China from taking military action if Beijing concludes political and diplomatic options have failed. For residents of Penghu, the issue is far less abstract — they are preparing for a possibility they hope never becomes reality.</p>
   </div>
   
   <div class="unconfirmed-box"><b>Still developing:</b> Stream26 News has found no verified evidence of an imminent Chinese invasion order. This report describes preparation and deterrence posture, not a confirmed military operation.</div>
 
-  <div class="ad-slot">Ad slot — insert AdSense unit here after approval</div>
-
-  <div class="share-bar">
-    <span class="share-label">Share this story</span>
-    <div class="share-buttons">
-      <a class="share-btn wa" href="https://wa.me/?text=Taiwan%20Fortifies%20Penghu%20as%20Military%20Prepares%20for%20the%20Possibility%20of%20a%20Chinese%20Attack%20%E2%80%94%20https%3A%2F%2Fstream26news.pages.dev%2Farticle-global-taiwan-penghu.html" target="_blank" rel="noopener">WhatsApp</a>
-      <a class="share-btn fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fstream26news.pages.dev%2Farticle-global-taiwan-penghu.html" target="_blank" rel="noopener">Facebook</a>
-      <a class="share-btn x" href="https://twitter.com/intent/tweet?text=Taiwan%20Fortifies%20Penghu%20as%20Military%20Prepares%20for%20the%20Possibility%20of%20a%20Chinese%20Attack%20%E2%80%94%20https%3A%2F%2Fstream26news.pages.dev%2Farticle-global-taiwan-penghu.html" target="_blank" rel="noopener">X</a>
-      <button class="share-btn copy" onclick="copyLink('https://stream26news.pages.dev/article-global-taiwan-penghu.html')">Copy Link</button>
-    </div>
+  <div class="social-bar share-bar-v2 bottom-share">
+  <span class="social-label">Share</span>
+  <div class="social-icons">
+    <a class="social-icon-link" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fstream26news.pages.dev%2Farticle-global-taiwan-penghu.html" target="_blank" rel="noopener" aria-label="Share on Facebook"><svg viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="12" r="12" fill="#1877F2"/><path fill="#fff" d="M13.5 21v-7.6h2.6l.4-3h-3v-1.9c0-.9.25-1.5 1.55-1.5H16.6V4.3c-.28-.04-1.25-.12-2.38-.12-2.36 0-3.97 1.44-3.97 4.08v2.14H7.6v3h2.65V21h3.25z"/></svg></a>
+    <a class="social-icon-link" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fstream26news.pages.dev%2Farticle-global-taiwan-penghu.html" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><svg viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="12" r="12" fill="#0A66C2"/><path fill="#fff" d="M7.1 9.6H4.4V19h2.7V9.6zM5.75 5c-.9 0-1.5.6-1.5 1.4 0 .77.58 1.4 1.46 1.4h.02c.93 0 1.5-.63 1.5-1.4C7.2 5.6 6.65 5 5.75 5zM19.5 19h-2.7v-5.05c0-1.2-.42-2-1.48-2-.8 0-1.28.55-1.5 1.08-.08.19-.1.45-.1.72V19H11s.04-8.55 0-9.4h2.72v1.33c.36-.55 1-1.35 2.45-1.35 1.8 0 3.15 1.18 3.15 3.7V19z"/></svg></a>
+    <a class="social-icon-link" href="https://twitter.com/intent/tweet?text=Taiwan%20Fortifies%20Penghu%20as%20Military%20Prepares%20for%20the%20Possibility%20of%20a%20Chinese%20Attack%20%E2%80%94%20https%3A%2F%2Fstream26news.pages.dev%2Farticle-global-taiwan-penghu.html" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="12" r="12" fill="#000"/><path fill="#fff" d="M17.5 6h2.1l-4.6 5.3L20.4 18h-4.2l-3.3-4.3L9.1 18H7l4.9-5.6L6.5 6h4.3l3 4L17.5 6zm-.74 10.7h1.15L9.3 7.24H8.06l8.7 9.46z"/></svg></a>
+    <a class="social-icon-link" href="https://wa.me/?text=Taiwan%20Fortifies%20Penghu%20as%20Military%20Prepares%20for%20the%20Possibility%20of%20a%20Chinese%20Attack%20%E2%80%94%20https%3A%2F%2Fstream26news.pages.dev%2Farticle-global-taiwan-penghu.html" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="12" r="12" fill="#25D366"/><path fill="#fff" d="M17.5 6.5A7.4 7.4 0 0 0 6.2 15.8L5 19l3.3-1.2a7.4 7.4 0 0 0 3.6.9 7.4 7.4 0 0 0 5.6-12.2zm-5.6 11.3a6.1 6.1 0 0 1-3.1-.85l-.22-.13-2.3.8.77-2.24-.14-.23a6.1 6.1 0 1 1 5 2.65zm3.35-4.58c-.18-.1-1.08-.53-1.24-.6-.17-.06-.29-.1-.41.1s-.47.6-.58.72c-.1.13-.21.14-.4.05a5 5 0 0 1-1.47-.9 5.5 5.5 0 0 1-1-1.27c-.1-.18 0-.28.08-.37.08-.08.18-.21.27-.32.09-.1.12-.18.18-.3.06-.13.03-.24-.02-.34-.05-.1-.4-.98-.55-1.35-.15-.35-.3-.3-.41-.31h-.35c-.12 0-.3.05-.47.23-.16.18-.62.6-.62 1.47s.63 1.7.72 1.83c.1.12 1.24 1.9 3 2.66.42.18.75.3 1 .37.42.13.8.11 1.1.07.34-.05 1.08-.44 1.23-.87.15-.42.15-.79.1-.86-.04-.08-.16-.13-.34-.22z"/></svg></a>
+    <a class="social-icon-link" href="https://t.me/share/url?url=https%3A%2F%2Fstream26news.pages.dev%2Farticle-global-taiwan-penghu.html&text=Taiwan%20Fortifies%20Penghu%20as%20Military%20Prepares%20for%20the%20Possibility%20of%20a%20Chinese%20Attack%20%E2%80%94%20https%3A%2F%2Fstream26news.pages.dev%2Farticle-global-taiwan-penghu.html" target="_blank" rel="noopener" aria-label="Share on Telegram"><svg viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="12" r="12" fill="#229ED9"/><path fill="#fff" d="M17.7 7.1 5.9 11.7c-.8.3-.8.8-.15 1l3 .93 1.15 3.6c.14.4.24.55.5.55.24 0 .35-.11.48-.24l1.3-1.26 2.7 2c.5.28.86.13.98-.46l1.78-8.4c.17-.75-.28-1.08-.94-.8z"/></svg></a>
+    <button class="social-icon-link copy-btn" onclick="copyLink('https://stream26news.pages.dev/article-global-taiwan-penghu.html')" aria-label="Copy link" type="button">🔗</button>
   </div>
+</div>
 
 <style>
 .related-block{margin:40px 0 10px;padding-top:28px;border-top:1px solid #E4E4E4;}
@@ -168,12 +199,6 @@ footer.site img{height:34px;}
   <div class="wrap">
     <a href="index.html"><img src="logo-mark.png" alt="Stream26 News"></a>
     <div>© 2026 Stream26 News. All rights reserved.</div>
-    <div class="follow-us">
-      <a href="https://www.facebook.com/share/1EgCjsYHHz/" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
-      <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn">LI</a>
-      <a href="#" target="_blank" rel="noopener" aria-label="X">X</a>
-      <a href="https://whatsapp.com/channel/0029Vb8ZBix1noz2zGpDRb0m" target="_blank" rel="noopener" aria-label="WhatsApp Channel">WA</a>
-    </div>
   </div>
 </footer>
 
