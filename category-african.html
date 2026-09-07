@@ -227,7 +227,7 @@ function shareHeadline(url, title, btn){
     const shown = Array.from(document.querySelectorAll('.story-row h3 a')).map(a => a.getAttribute('href'));
     let viewed = [];
     try { viewed = JSON.parse(localStorage.getItem('s26_viewed') || '[]'); } catch(e){}
-    let items = data.filter(a => a.category === 'AFRICA' && !shown.includes(a.slug));
+    let items = data.filter(a => (a.category === 'AFRICA' || a.category === 'NIGERIA') && !shown.includes(a.slug));
     items.sort((a, b) => {
       const aBoost = viewed.includes(a.slug) ? 0 : 1;
       const bBoost = viewed.includes(b.slug) ? 0 : 1;
@@ -239,7 +239,7 @@ function shareHeadline(url, title, btn){
     if(el){
       el.innerHTML = items.length ? items.map((a,i) =>
         `<div class="more-row"><span class="num">${String(i+1).padStart(2,'0')}</span><a href="${a.slug}">${a.headline}</a></div>`
-      ).join('') : '<div class="more-row"><span style="color:var(--ink-soft);font-size:13px;">No further stories yet.</span></div>';
+      ).join('') : '';
     }
   }).catch(() => {});
 })();

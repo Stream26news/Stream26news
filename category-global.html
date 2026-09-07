@@ -266,7 +266,7 @@ function shareHeadline(url, title, btn){
     if(el){
       el.innerHTML = items.length ? items.map((a,i) =>
         `<div class="more-row"><span class="num">${String(i+1).padStart(2,'0')}</span><a href="${a.slug}">${a.headline}</a></div>`
-      ).join('') : '<div class="more-row"><span style="color:var(--ink-soft);font-size:13px;">No further stories yet.</span></div>';
+      ).join('') : '';
     }
   }).catch(() => {});
 })();
