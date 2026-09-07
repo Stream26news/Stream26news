@@ -72,6 +72,12 @@ footer.site{padding:36px 0 60px;font-family:'IBM Plex Mono',monospace;font-size:
 footer.site .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;}
 footer.site img{height:30px;}
 @media (max-width:600px){.story-row{grid-template-columns:100px 1fr;}.story-row .thumb{width:100px;height:76px;}}
+
+.more-list{padding:20px 0;}
+.more-row{display:flex;gap:12px;align-items:baseline;padding:12px 0;border-bottom:1px solid var(--rule);}
+.more-row .num{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--red);font-weight:600;}
+.more-row a{font-family:'Fraunces',serif;font-size:15px;font-weight:500;}
+.more-row a:hover{color:var(--red);}
 </style>
 <style>.headline-share{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:var(--paper-dim);border:1px solid var(--rule);font-size:10px;cursor:pointer;margin-left:6px;vertical-align:middle;flex-shrink:0;}.headline-share:hover{background:var(--red);border-color:var(--red);}</style>
 </head>
@@ -135,6 +141,8 @@ footer.site img{height:30px;}
           <div class="byline">Stream26 Africa Desk</div>
         </div>
       </div>
+<div class="wrap"><div class="ad-slot" style="background:var(--paper-dim);border:1px dashed var(--rule);border-radius:2px;display:flex;align-items:center;justify-content:center;color:var(--ink-soft);font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.05em;text-transform:uppercase;min-height:100px;margin:20px 0;">Ad slot — insert AdSense unit here after approval</div></div>
+
       <div class="story-row">
         <div class="thumb" style="background-image:url('banner2-zambia.jpg')"></div>
         <div>
@@ -153,6 +161,13 @@ footer.site img{height:30px;}
           <div class="byline">Stream26 Nigeria Desk</div>
         </div>
       </div>
+</div>
+
+<div class="wrap"><div class="ad-slot" style="background:var(--paper-dim);border:1px dashed var(--rule);border-radius:2px;display:flex;align-items:center;justify-content:center;color:var(--ink-soft);font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.05em;text-transform:uppercase;min-height:100px;margin:20px 0;">Ad slot — insert AdSense unit here after approval</div></div>
+
+<div class="wrap page-head" style="padding:24px 0 0;"><h2 style="font-family:'Fraunces',serif;font-size:20px;">More Africa News</h2></div>
+<div class="wrap more-list" id="africa-more">
+  <div class="more-row"><span class="num">·</span><span style="color:var(--ink-soft);font-size:13px;">Loading more stories…</span></div>
 </div>
 
 <div class="wrap"><div class="social-bar follow-bar bottom-follow-bar">
@@ -204,6 +219,30 @@ function shareHeadline(url, title, btn){
     window.open('https://wa.me/?text=' + encodeURIComponent(title + ' — ' + url), '_blank');
   }
 }
+</script>
+
+<script>
+(function(){
+  fetch('search-index.json').then(r => r.json()).then(data => {
+    const shown = Array.from(document.querySelectorAll('.story-row h3 a')).map(a => a.getAttribute('href'));
+    let viewed = [];
+    try { viewed = JSON.parse(localStorage.getItem('s26_viewed') || '[]'); } catch(e){}
+    let items = data.filter(a => a.category === 'AFRICA' && !shown.includes(a.slug));
+    items.sort((a, b) => {
+      const aBoost = viewed.includes(a.slug) ? 0 : 1;
+      const bBoost = viewed.includes(b.slug) ? 0 : 1;
+      if(aBoost !== bBoost) return aBoost - bBoost;
+      return new Date(b.date) - new Date(a.date);
+    });
+    items = items.slice(0, 6);
+    const el = document.getElementById('africa-more');
+    if(el){
+      el.innerHTML = items.length ? items.map((a,i) =>
+        `<div class="more-row"><span class="num">${String(i+1).padStart(2,'0')}</span><a href="${a.slug}">${a.headline}</a></div>`
+      ).join('') : '<div class="more-row"><span style="color:var(--ink-soft);font-size:13px;">No further stories yet.</span></div>';
+    }
+  }).catch(() => {});
+})();
 </script>
 </body>
 </html>

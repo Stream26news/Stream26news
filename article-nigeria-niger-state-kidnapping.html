@@ -187,10 +187,8 @@ footer.site img{height:34px;}
 
 <div class="wrap related-block">
   <h2>More in Nigeria News</h2>
-  <div class="related-list">
-    <a href="article-nigeria-ai-misinformation.html">Nigeria's AI Misinformation Problem Is Entering a More Dangerous Phase</a>
-    <a href="article-nigeria-cbn-treasury-bill.html">CBN Cuts One-Year Treasury-Bill Rate as Investors Flood Auction With ₦3.63 Trillion in Bids</a>
-    <a href="article-nigeria-defence-plan.html">Tinubu Orders National Threat Assessment and Five-Year Defence Strategy</a>
+  <div class="related-list" id="related-dynamic-list">
+    <a href="#">Loading related stories…</a>
   </div>
 </div>
 </main>
@@ -210,5 +208,34 @@ function copyLink(url){
 }
 </script>
 
+
+<script>
+(function(){
+  const THIS_SLUG = "article-nigeria-niger-state-kidnapping.html";
+  try {
+    let viewed = JSON.parse(localStorage.getItem('s26_viewed') || '[]');
+    viewed = viewed.filter(s => s !== THIS_SLUG);
+    viewed.unshift(THIS_SLUG);
+    localStorage.setItem('s26_viewed', JSON.stringify(viewed.slice(0, 20)));
+  } catch(e){}
+
+  fetch('search-index.json').then(r => r.json()).then(data => {
+    const me = data.find(a => a.slug === THIS_SLUG);
+    if(!me) return;
+    const myTags = new Set(me.tags || []);
+    const scored = data.filter(a => a.slug !== THIS_SLUG).map(a => {
+      const shared = (a.tags || []).filter(t => myTags.has(t)).length;
+      const catMatch = a.category === me.category ? 1 : 0;
+      return { a, score: shared * 10 + catMatch * 3 + (new Date(a.date).getTime() / 1e13) };
+    });
+    scored.sort((x, y) => y.score - x.score);
+    const top = scored.slice(0, 3).map(s => s.a);
+    const el = document.getElementById('related-dynamic-list');
+    if(el && top.length){
+      el.innerHTML = top.map(a => `<a href="${a.slug}">${a.headline}</a>`).join('');
+    }
+  }).catch(() => {});
+})();
+</script>
 </body>
 </html>
