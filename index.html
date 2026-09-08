@@ -161,6 +161,7 @@
   "@context": "https://schema.org",
   "@type": "NewsMediaOrganization",
   "name": "Stream26 News",
+  "alternateName": "S26 News",
   "url": "https://stream26news.pages.dev/",
   "logo": "https://stream26news.pages.dev/logo-wide.png",
   "sameAs": []
@@ -206,6 +207,8 @@
 <link rel="alternate" type="application/rss+xml" title="Stream26 News RSS Feed" href="rss.xml">
 </head>
 <body>
+
+<h1 style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">Stream26 News — Global, African, Nigerian, European and Sports News</h1>
 
 <div class="utility">
   <div class="wrap">
@@ -535,6 +538,20 @@ function byTrendingThenRecency(a, b){
   if(a.trending !== b.trending) return a.trending ? -1 : 1;
   return byRecency(a, b);
 }
+// Pulls a rotating selection from a larger recent pool, weighted toward trending/newer
+// items but re-shuffled on every page load — so a refresh mixes in older and updated
+// stories instead of always showing the exact same fixed top-N.
+function pickRotating(items, displayCount, poolMultiplier){
+  poolMultiplier = poolMultiplier || 3;
+  const pool = items.slice().sort(byTrendingThenRecency).slice(0, displayCount * poolMultiplier);
+  const weighted = pool.map(function(a, i){
+    const recencyWeight = 1 + (pool.length - i) / pool.length; // earlier-in-pool = slightly favoured
+    const trendWeight = a.trending ? 1.5 : 1;
+    return { a: a, key: Math.random() * recencyWeight * trendWeight };
+  });
+  weighted.sort(function(x, y){ return y.key - x.key; });
+  return weighted.slice(0, displayCount).map(function(w){ return w.a; });
+}
 function renderListRows(items, startNum){
   return items.map((a, i) =>
     `<div class="headline-row"><span class="num">${String(startNum + i).padStart(2,'0')}</span><a href="${a.slug}">${a.headline}</a>${shareLinkFor(a)}</div>`
@@ -555,23 +572,23 @@ function renderCard(a){
   </article>`;
 }
 function renderAllDynamicSections(){
-  const globalDeskItems = S26_INDEX.filter(a => !S26_FIXED_GLOBAL.includes(a.slug)).sort(byTrendingThenRecency).slice(0, 6);
+  const globalDeskItems = pickRotating(S26_INDEX.filter(a => !S26_FIXED_GLOBAL.includes(a.slug)), 6);
   const gdEl = document.getElementById('globaldesk-list');
   if(gdEl) gdEl.innerHTML = splitIntoTwoCols(globalDeskItems);
 
-  const africaItems = S26_INDEX.filter(a => a.category === 'AFRICA').sort(byTrendingThenRecency).slice(0, 3);
+  const africaItems = pickRotating(S26_INDEX.filter(a => a.category === 'AFRICA'), 3);
   const afEl = document.getElementById('africa-cards');
   if(afEl) afEl.innerHTML = africaItems.map(renderCard).join('');
 
-  const europeItems = S26_INDEX.filter(a => a.category === 'EUROPE').sort(byRecency).slice(0, 5);
+  const europeItems = pickRotating(S26_INDEX.filter(a => a.category === 'EUROPE'), 5);
   const euEl = document.getElementById('europe-list');
   if(euEl) euEl.innerHTML = splitIntoTwoCols(europeItems);
 
-  const nigeriaItems = S26_INDEX.filter(a => a.category === 'NIGERIA').sort(byRecency).slice(0, 4);
+  const nigeriaItems = pickRotating(S26_INDEX.filter(a => a.category === 'NIGERIA'), 4);
   const ngEl = document.getElementById('nigeria-list');
   if(ngEl) ngEl.innerHTML = splitIntoTwoCols(nigeriaItems);
 
-  const sportsItems = S26_INDEX.filter(a => a.category === 'SPORTS').sort(byRecency).slice(0, 8);
+  const sportsItems = pickRotating(S26_INDEX.filter(a => a.category === 'SPORTS'), 8);
   const spEl = document.getElementById('sports-list');
   if(spEl) spEl.innerHTML = splitIntoTwoCols(sportsItems);
 }
