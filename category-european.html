@@ -79,8 +79,9 @@ footer.site img{height:30px;}
 @media (max-width:600px){.story-row{grid-template-columns:100px 1fr;}.story-row .thumb{width:100px;height:76px;}}
 
 .more-list{padding:20px 0;}
-.more-row{display:flex;gap:12px;align-items:baseline;padding:12px 0;border-bottom:1px solid var(--rule);}
-.more-row .num{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--red);font-weight:600;}
+.more-row{display:flex;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--rule);}
+.more-row .num{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--red);font-weight:600;flex:0 0 auto;}
+.more-row .row-thumb{flex:0 0 auto;width:48px;height:48px;border-radius:4px;background-size:cover;background-position:center;}
 .more-row a{font-family:'Fraunces',serif;font-size:15px;font-weight:500;}
 .more-row a:hover{color:var(--red);}
 </style>
@@ -164,35 +165,6 @@ footer.site img{height:30px;}
           <div class="byline">Stream26 Europe Desk</div>
         </div>
       </div>
-<div class="wrap"><div class="ad-slot" style="background:var(--paper-dim);border:1px dashed var(--rule);border-radius:2px;display:flex;align-items:center;justify-content:center;color:var(--ink-soft);font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.05em;text-transform:uppercase;min-height:100px;margin:20px 0;">Ad slot — insert AdSense unit here after approval</div></div>
-
-      <div class="story-row">
-        <div class="thumb" style="background-image:url('banner2-russia-britain.jpg')"></div>
-        <div>
-          <span class="badge verified">Verified</span>
-          <h3><a href="article-europe-russia-britain-warning.html">Russia Warns Britain Over Ukraine Missile Support</a><span class="headline-share" onclick="shareHeadline('https://stream26news.pages.dev/article-europe-russia-britain-warning.html', 'Russia Warns Britain Over Ukraine Missile Support')" title="Share">↗</span></h3>
-          <p>Russia has warned that British military facilities could become targets if Ukraine continues using British-supplied long-range missiles against Russian territory.</p>
-          <div class="byline">Stream26 Europe Desk</div>
-        </div>
-      </div>
-      <div class="story-row">
-        <div class="thumb" style="background-image:url('banner2-ukraine-assault.jpg')"></div>
-        <div>
-          <span class="badge verified">Verified</span>
-          <h3><a href="article-europe-ukraine-air-assault.html">Ukraine Under Heavy Russian Air Assault as Air-Defence Pressure Grows</a><span class="headline-share" onclick="shareHeadline('https://stream26news.pages.dev/article-europe-ukraine-air-assault.html', 'Ukraine Under Heavy Russian Air Assault as Air-Defence Pressure Grows')" title="Share">↗</span></h3>
-          <p>Ukraine has endured another major Russian air assault involving a large number of drones and missiles, as Kyiv's air-defence network faces mounting strain.</p>
-          <div class="byline">Stream26 Europe Desk</div>
-        </div>
-      </div>
-      <div class="story-row">
-        <div class="thumb" style="background-image:url('banner2-ukraine-talks.jpg')"></div>
-        <div>
-          <span class="badge developing">Developing Story</span>
-          <h3><a href="article-europe-ukraine-september-talks.html">Ukraine Signals September Window for Renewed Peace Talks</a><span class="headline-share" onclick="shareHeadline('https://stream26news.pages.dev/article-europe-ukraine-september-talks.html', 'Ukraine Signals September Window for Renewed Peace Talks')" title="Share">↗</span></h3>
-          <p>Ukraine believes another round of talks involving Russia and the United States could become possible in September, though no peace summit has been confirmed.</p>
-          <div class="byline">Stream26 Europe Desk</div>
-        </div>
-      </div>
 </div>
 
 <div class="wrap"><div class="ad-slot" style="background:var(--paper-dim);border:1px dashed var(--rule);border-radius:2px;display:flex;align-items:center;justify-content:center;color:var(--ink-soft);font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.05em;text-transform:uppercase;min-height:100px;margin:20px 0;">Ad slot — insert AdSense unit here after approval</div></div>
@@ -266,11 +238,16 @@ function shareHeadline(url, title, btn){
       if(aBoost !== bBoost) return aBoost - bBoost;
       return new Date(b.date) - new Date(a.date);
     });
-    items = items.slice(0, 6);
+    // Rotate: pick a re-shuffled 6 from a larger recent pool on every page load,
+    // instead of always showing the exact same fixed set.
+    const pool = items.slice(0, 18);
+    const weighted = pool.map((a, i) => ({ a, key: Math.random() * (1 + (pool.length - i) / pool.length) }));
+    weighted.sort((x, y) => y.key - x.key);
+    items = weighted.slice(0, 6).map(w => w.a);
     const el = document.getElementById('europe-more');
     if(el){
       el.innerHTML = items.length ? items.map((a,i) =>
-        `<div class="more-row"><span class="num">${String(i+1).padStart(2,'0')}</span><a href="${a.slug}">${a.headline}</a></div>`
+        `<div class="more-row"><span class="num">${String(i+1).padStart(2,'0')}</span><div class="row-thumb" style="background-image:url('${a.image}')"></div><a href="${a.slug}">${a.headline}</a></div>`
       ).join('') : '';
     }
   }).catch(() => {});

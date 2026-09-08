@@ -98,8 +98,9 @@
 
   .list-section{padding:40px 0;border-top:1px solid var(--rule);background:var(--paper-dim);}
   .headline-list{display:grid;grid-template-columns:1fr 1fr;gap:0 48px;}
-  .headline-row{display:flex;gap:14px;align-items:baseline;padding:14px 0;border-bottom:1px solid var(--rule);}
+  .headline-row{display:flex;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid var(--rule);}
   .headline-row .num{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--red);font-weight:600;flex:0 0 auto;}
+  .headline-row .row-thumb{flex:0 0 auto;width:56px;height:56px;border-radius:4px;background-size:cover;background-position:center;}
   .headline-row a{font-family:'Fraunces',serif;font-size:16.5px;font-weight:500;line-height:1.25;}
   .headline-row a:hover{color:var(--red);}
 
@@ -554,7 +555,7 @@ function pickRotating(items, displayCount, poolMultiplier){
 }
 function renderListRows(items, startNum){
   return items.map((a, i) =>
-    `<div class="headline-row"><span class="num">${String(startNum + i).padStart(2,'0')}</span><a href="${a.slug}">${a.headline}</a>${shareLinkFor(a)}</div>`
+    `<div class="headline-row"><span class="num">${String(startNum + i).padStart(2,'0')}</span><div class="row-thumb" style="background-image:url('${a.image}')"></div><a href="${a.slug}">${a.headline}</a>${shareLinkFor(a)}</div>`
   ).join('');
 }
 function splitIntoTwoCols(items){

@@ -79,8 +79,9 @@ footer.site img{height:30px;}
 @media (max-width:600px){.story-row{grid-template-columns:100px 1fr;}.story-row .thumb{width:100px;height:76px;}}
 
 .more-list{padding:20px 0;}
-.more-row{display:flex;gap:12px;align-items:baseline;padding:12px 0;border-bottom:1px solid var(--rule);}
-.more-row .num{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--red);font-weight:600;}
+.more-row{display:flex;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--rule);}
+.more-row .num{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--red);font-weight:600;flex:0 0 auto;}
+.more-row .row-thumb{flex:0 0 auto;width:48px;height:48px;border-radius:4px;background-size:cover;background-position:center;}
 .more-row a{font-family:'Fraunces',serif;font-size:15px;font-weight:500;}
 .more-row a:hover{color:var(--red);}
 </style>
@@ -173,44 +174,6 @@ footer.site img{height:30px;}
           <div class="byline">Stream26 Nigeria Desk</div>
         </div>
       </div>
-<div class="wrap"><div class="ad-slot" style="background:var(--paper-dim);border:1px dashed var(--rule);border-radius:2px;display:flex;align-items:center;justify-content:center;color:var(--ink-soft);font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.05em;text-transform:uppercase;min-height:100px;margin:20px 0;">Ad slot — insert AdSense unit here after approval</div></div>
-
-      <div class="story-row">
-        <div class="thumb" style="background-image:url('banner-defence.jpg')"></div>
-        <div>
-          <span class="badge verified">Verified</span>
-          <h3><a href="article-nigeria-defence-plan.html">Tinubu Orders National Threat Assessment and Five-Year Defence Strategy</a><span class="headline-share" onclick="shareHeadline('https://stream26news.pages.dev/article-nigeria-defence-plan.html', 'Tinubu Orders National Threat Assessment and Five-Year Defence Strategy')" title="Share">↗</span></h3>
-          <p>President Bola Tinubu has ordered a comprehensive national threat assessment and a five-year strategic defence plan for Nigeria.</p>
-          <div class="byline">Stream26 Nigeria Desk</div>
-        </div>
-      </div>
-      <div class="story-row">
-        <div class="thumb" style="background-image:url('banner2-nff.jpg')"></div>
-        <div>
-          <span class="badge verified">Verified</span>
-          <h3><a href="article-nigeria-nff-crisis.html">NFF Crisis Deepens as Ibrahim Gusau and Executive Committee Resign</a><span class="headline-share" onclick="shareHeadline('https://stream26news.pages.dev/article-nigeria-nff-crisis.html', 'NFF Crisis Deepens as Ibrahim Gusau and Executive Committee Resign')" title="Share">↗</span></h3>
-          <p>Nigeria Football Federation president Ibrahim Gusau, general secretary Mohammed Sanusi, and the executive committee have resigned weeks before the scheduled elective congress.</p>
-          <div class="byline">Stream26 Nigeria Desk</div>
-        </div>
-      </div>
-      <div class="story-row">
-        <div class="thumb" style="background-image:url('banner2-villagers-niger.jpg')"></div>
-        <div>
-          <span class="badge developing">Developing Story</span>
-          <h3><a href="article-nigeria-niger-state-kidnapping.html">Niger State Kidnapping: What Is Confirmed — and What Remains Unclear</a><span class="headline-share" onclick="shareHeadline('https://stream26news.pages.dev/article-nigeria-niger-state-kidnapping.html', 'Niger State Kidnapping: What Is Confirmed — and What Remains Unclear')" title="Share">↗</span></h3>
-          <p>A mass kidnapping in Niger State has produced conflicting claims about the number of victims. Stream26 News is not treating unverified online figures as confirmed fact.</p>
-          <div class="byline">Stream26 Nigeria Desk</div>
-        </div>
-      </div>
-      <div class="story-row">
-        <div class="thumb" style="background-image:url('banner-nonoil.jpg')"></div>
-        <div>
-          <span class="badge explainer">Explainer</span>
-          <h3><a href="article-nigeria-nonoil-exports.html">Why Nigeria's Non-Oil Exports Are Quietly Becoming a Bigger Story Than Oil</a><span class="headline-share" onclick="shareHeadline('https://stream26news.pages.dev/article-nigeria-nonoil-exports.html', 'Why Nigeria\'s Non-Oil Exports Are Quietly Becoming a Bigger Story Than Oil')" title="Share">↗</span></h3>
-          <p>An explainer on the growing role of agriculture, services, and manufacturing in Nigeria's export economy alongside its traditional oil sector.</p>
-          <div class="byline">Stream26 Nigeria Desk</div>
-        </div>
-      </div>
 </div>
 
 <div class="wrap"><div class="ad-slot" style="background:var(--paper-dim);border:1px dashed var(--rule);border-radius:2px;display:flex;align-items:center;justify-content:center;color:var(--ink-soft);font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.05em;text-transform:uppercase;min-height:100px;margin:20px 0;">Ad slot — insert AdSense unit here after approval</div></div>
@@ -284,11 +247,16 @@ function shareHeadline(url, title, btn){
       if(aBoost !== bBoost) return aBoost - bBoost;
       return new Date(b.date) - new Date(a.date);
     });
-    items = items.slice(0, 6);
+    // Rotate: pick a re-shuffled 6 from a larger recent pool on every page load,
+    // instead of always showing the exact same fixed set.
+    const pool = items.slice(0, 18);
+    const weighted = pool.map((a, i) => ({ a, key: Math.random() * (1 + (pool.length - i) / pool.length) }));
+    weighted.sort((x, y) => y.key - x.key);
+    items = weighted.slice(0, 6).map(w => w.a);
     const el = document.getElementById('nigeria-more');
     if(el){
       el.innerHTML = items.length ? items.map((a,i) =>
-        `<div class="more-row"><span class="num">${String(i+1).padStart(2,'0')}</span><a href="${a.slug}">${a.headline}</a></div>`
+        `<div class="more-row"><span class="num">${String(i+1).padStart(2,'0')}</span><div class="row-thumb" style="background-image:url('${a.image}')"></div><a href="${a.slug}">${a.headline}</a></div>`
       ).join('') : '';
     }
   }).catch(() => {});
