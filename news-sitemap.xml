@@ -21,7 +21,7 @@
         <news:language>en</news:language>
       </news:publication>
       <news:publication_date>2026-08-24</news:publication_date>
-      <news:title>Ebola Outbreak in Eastern Congo Raises Fears Over School Reopening</news:title>
+      <news:title>DRC Ebola Outbreak Passes 3,000 Deaths as WHO Warns Transmission Still Accelerating</news:title>
       <news:keywords>African News, Africa Politics</news:keywords>
     </news:news>
   </url>
@@ -33,7 +33,7 @@
         <news:language>en</news:language>
       </news:publication>
       <news:publication_date>2026-08-24</news:publication_date>
-      <news:title>Zambia's Opposition Crisis Deepens as Mundubile Faces Treason Allegation</news:title>
+      <news:title>Zambia's Mundubile Formally Charged With Treason as Hichilema Sworn In</news:title>
       <news:keywords>African News, Africa Politics</news:keywords>
     </news:news>
   </url>
@@ -141,7 +141,7 @@
         <news:language>en</news:language>
       </news:publication>
       <news:publication_date>2026-08-24</news:publication_date>
-      <news:title>Nepal Disaster: Search Intensifies as Hundreds Remain Missing After Devastating Floods</news:title>
+      <news:title>Nepal Flood Disaster: Death Toll Passes 1,375 as Rescuers Free Survivors From Hydropower Tunnels</news:title>
       <news:keywords>World News, International Affairs</news:keywords>
     </news:news>
   </url>
@@ -285,7 +285,7 @@
         <news:language>en</news:language>
       </news:publication>
       <news:publication_date>2026-08-24</news:publication_date>
-      <news:title>Liverpool Close on Bradley Barcola as £120 Million Transfer Nears Completion</news:title>
+      <news:title>Liverpool Complete Bradley Barcola Deal in £107m-Plus Transfer From PSG</news:title>
       <news:keywords>Football News, Sports</news:keywords>
     </news:news>
   </url>
@@ -309,7 +309,7 @@
         <news:language>en</news:language>
       </news:publication>
       <news:publication_date>2026-08-24</news:publication_date>
-      <news:title>Chelsea's Busy Summer Continues as Enzo Fernández Speculation Meets Transfer Activity</news:title>
+      <news:title>Enzo Fernández Completes £125m Deadline-Day Move to Manchester City</news:title>
       <news:keywords>Football News, Sports</news:keywords>
     </news:news>
   </url>
@@ -359,6 +359,234 @@
       <news:publication_date>2026-08-24</news:publication_date>
       <news:title>UEFA-FIFA Power Struggle Escalates as Infantino Faces Fresh Scrutiny</news:title>
       <news:keywords>Football News, Sports</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://stream26news.pages.dev/article-global-us-iran-war.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Stream26 News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-07</news:publication_date>
+      <news:title>US and Iran Trade Fresh Strikes as Month-Long Lull in Fighting Collapses</news:title>
+      <news:keywords>Global Affairs</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://stream26news.pages.dev/article-global-iran-wedding-strike.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Stream26 News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-07</news:publication_date>
+      <news:title>Wedding Gathering Hit in Southern Iran Strike, Iranian Officials Say</news:title>
+      <news:keywords>Global Affairs</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://stream26news.pages.dev/article-global-xi-jinping-egypt.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Stream26 News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-06</news:publication_date>
+      <news:title>Xi Jinping Arrives in Egypt as China Seeks Bigger Role in Middle East Security</news:title>
+      <news:keywords>Global Affairs</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://stream26news.pages.dev/article-europe-leipzig-drone-plot.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Stream26 News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-05</news:publication_date>
+      <news:title>Germany Accuses Russia Over Leipzig Airport Explosive-Drone Plot</news:title>
+      <news:keywords>European News</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://stream26news.pages.dev/article-global-ai-datacentres-electricity.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Stream26 News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-04</news:publication_date>
+      <news:title>AI Data Centres Are Creating a New Problem: Who Pays for the Electricity?</news:title>
+      <news:keywords>Global Affairs</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://stream26news.pages.dev/article-global-us-shutdown-deal.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Stream26 News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-03</news:publication_date>
+      <news:title>US Government Shutdown Fight Pushed Down the Road — Not Resolved</news:title>
+      <news:keywords>Global Affairs</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://stream26news.pages.dev/article-global-oil-surge-hormuz.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Stream26 News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-05</news:publication_date>
+      <news:title>Oil Surges as Iran Conflict Threatens the World's Most Important Energy Chokepoint</news:title>
+      <news:keywords>Global Affairs</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://stream26news.pages.dev/article-europe-turkey-sco-nato.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Stream26 News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-02</news:publication_date>
+      <news:title>Turkey Looks East While Remaining in NATO</news:title>
+      <news:keywords>European News</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://stream26news.pages.dev/article-nigeria-uber-exit.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Stream26 News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-03</news:publication_date>
+      <news:title>Uber Ends 12-Year Nigerian Journey — And Its Uganda Operations Too</news:title>
+      <news:keywords>Nigeria Top News</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://stream26news.pages.dev/article-nigeria-efcc-crackdown.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Stream26 News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-04</news:publication_date>
+      <news:title>EFCC Dismisses More Than 40 Staff in Internal Corruption Crackdown</news:title>
+      <news:keywords>Nigeria Top News</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://stream26news.pages.dev/article-global-uber-layoffs.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Stream26 News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-03</news:publication_date>
+      <news:title>Uber Cuts 3,300 Jobs as Global Restructuring Adds Another Layer to African Exit</news:title>
+      <news:keywords>Global Affairs</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://stream26news.pages.dev/article-global-shein-hongkong-listing.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Stream26 News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-02</news:publication_date>
+      <news:title>Shein Shares Slide After Hong Kong Listing as Investors Reassess Fast-Fashion Giant</news:title>
+      <news:keywords>Global Affairs</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://stream26news.pages.dev/article-global-honda-costcutting.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Stream26 News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-04</news:publication_date>
+      <news:title>Honda Unveils $9.4bn Cost-Cutting Drive as Chinese EV Makers Reshape the Industry</news:title>
+      <news:keywords>Global Affairs</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://stream26news.pages.dev/article-sports-transfer-window-record.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Stream26 News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-02</news:publication_date>
+      <news:title>Premier League Clubs Spend £3.46bn as English Football Smashes Its Transfer Record Again</news:title>
+      <news:keywords>Sports/Football</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://stream26news.pages.dev/article-sports-ndiaye-transfer.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Stream26 News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-01</news:publication_date>
+      <news:title>Manchester City Complete Iliman Ndiaye Deal as Spending Goes Into Overdrive</news:title>
+      <news:keywords>Sports/Football</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://stream26news.pages.dev/article-sports-balogun-deal-collapse.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Stream26 News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-01</news:publication_date>
+      <news:title>Everton's Folarin Balogun Deal Collapses at the Final Hour</news:title>
+      <news:keywords>Sports/Football</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://stream26news.pages.dev/article-sports-camara-deal-collapse.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Stream26 News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-01</news:publication_date>
+      <news:title>Chelsea Lose Lamine Camara Deal After Monaco Pulls the Plug</news:title>
+      <news:keywords>Sports/Football</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://stream26news.pages.dev/article-sports-champions-league-return.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Stream26 News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-07</news:publication_date>
+      <news:title>Champions League Returns With Real Madrid-Inter, Liverpool-Atlético and Napoli-Arsenal</news:title>
+      <news:keywords>Sports/Football</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://stream26news.pages.dev/article-nigeria-super-eagles-afcon2027.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Stream26 News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-06</news:publication_date>
+      <news:title>Super Eagles Face AFCON 2027 Qualifiers as Nigerian Football Attempts to Reset</news:title>
+      <news:keywords>Nigeria Top News</news:keywords>
     </news:news>
   </url>
 </urlset>
