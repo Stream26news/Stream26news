@@ -79,8 +79,9 @@ footer.site img{height:30px;}
 @media (max-width:600px){.story-row{grid-template-columns:100px 1fr;}.story-row .thumb{width:100px;height:76px;}}
 
 .more-list{padding:20px 0;}
-.more-row{display:flex;gap:12px;align-items:baseline;padding:12px 0;border-bottom:1px solid var(--rule);}
-.more-row .num{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--red);font-weight:600;}
+.more-row{display:flex;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--rule);}
+.more-row .num{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--red);font-weight:600;flex:0 0 auto;}
+.more-row .row-thumb{flex:0 0 auto;width:48px;height:48px;border-radius:4px;background-size:cover;background-position:center;}
 .more-row a{font-family:'Fraunces',serif;font-size:15px;font-weight:500;}
 .more-row a:hover{color:var(--red);}
 </style>
@@ -239,11 +240,16 @@ function shareHeadline(url, title, btn){
       if(aBoost !== bBoost) return aBoost - bBoost;
       return new Date(b.date) - new Date(a.date);
     });
-    items = items.slice(0, 6);
+    // Rotate: pick a re-shuffled 6 from a larger recent pool on every page load,
+    // instead of always showing the exact same fixed set.
+    const pool = items.slice(0, 18);
+    const weighted = pool.map((a, i) => ({ a, key: Math.random() * (1 + (pool.length - i) / pool.length) }));
+    weighted.sort((x, y) => y.key - x.key);
+    items = weighted.slice(0, 6).map(w => w.a);
     const el = document.getElementById('africa-more');
     if(el){
       el.innerHTML = items.length ? items.map((a,i) =>
-        `<div class="more-row"><span class="num">${String(i+1).padStart(2,'0')}</span><a href="${a.slug}">${a.headline}</a></div>`
+        `<div class="more-row"><span class="num">${String(i+1).padStart(2,'0')}</span><div class="row-thumb" style="background-image:url('${a.image}')"></div><a href="${a.slug}">${a.headline}</a></div>`
       ).join('') : '';
     }
   }).catch(() => {});
