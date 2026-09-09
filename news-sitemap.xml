@@ -589,4 +589,64 @@
       <news:keywords>Nigeria Top News</news:keywords>
     </news:news>
   </url>
+  <url>
+    <loc>https://stream26news.pages.dev/article-global-us-iran-tanker-strikes.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Stream26 News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-09</news:publication_date>
+      <news:title>US-Iran Conflict Explodes Again as Iran Strikes Back After America Destroys Five Oil Tankers</news:title>
+      <news:keywords>Global News, Middle East</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://stream26news.pages.dev/article-europe-uk-israel-settlement-ban.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Stream26 News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-09</news:publication_date>
+      <news:title>Britain Takes Harder Line Against Israel as UK Bans Settlement Goods and Israel Hits Back</news:title>
+      <news:keywords>European News, Middle East</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://stream26news.pages.dev/article-europe-trump-putin-peace-channel.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Stream26 News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-09</news:publication_date>
+      <news:title>Trump and Putin Reopen Ukraine Peace Channel as Washington Pushes for an End to the War</news:title>
+      <news:keywords>European News, United States</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://stream26news.pages.dev/article-global-lindsay-clancy-mistrial.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Stream26 News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-09</news:publication_date>
+      <news:title>Lindsay Clancy Case Takes New Turn After Mistrial as Lawyer Appeals to Trump for Pardon</news:title>
+      <news:keywords>Global News, United States</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://stream26news.pages.dev/article-nigeria-peter-obi-benue-convoy.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Stream26 News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-09</news:publication_date>
+      <news:title>Peter Obi's Convoy Blocked by Benue Youths as Political Tensions Rise Ahead of 2027</news:title>
+      <news:keywords>Nigerian News, Politics</news:keywords>
+    </news:news>
+  </url>
 </urlset>
