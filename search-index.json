@@ -1222,5 +1222,115 @@
       "begin",
       "qualification"
     ]
+  },
+  {
+    "slug": "article-global-us-iran-tanker-strikes.html",
+    "headline": "US-Iran Conflict Explodes Again as Iran Strikes Back After America Destroys Five Oil Tankers",
+    "category": "GLOBAL",
+    "desc": "US forces destroyed five Iranian crude tankers and Iran fired ballistic missiles at a US base in Jordan. Houthi forces then struck southern Saudi Arabia, injuring 73.",
+    "image": "banner2-us-iran-tanker-strikes.jpg",
+    "date": "2026-09-09",
+    "byline": "Stream26 Global Desk",
+    "readtime": "6 min read",
+    "trending": true,
+    "tags": [
+      "us",
+      "iran",
+      "tankers",
+      "strikes",
+      "jordan",
+      "saudi",
+      "houthi",
+      "oil",
+      "hormuz",
+      "escalation"
+    ]
+  },
+  {
+    "slug": "article-europe-uk-israel-settlement-ban.html",
+    "headline": "Britain Takes Harder Line Against Israel as UK Bans Settlement Goods and Israel Hits Back",
+    "category": "EUROPE",
+    "desc": "The UK, coordinated with France and Canada, has banned trade in goods from Israeli West Bank settlements. Israel is retaliating by closing Britain's East Jerusalem consulate.",
+    "image": "banner2-uk-israel-settlement-ban.jpg",
+    "date": "2026-09-09",
+    "byline": "Stream26 Europe Desk",
+    "readtime": "5 min read",
+    "trending": true,
+    "tags": [
+      "uk",
+      "britain",
+      "israel",
+      "settlements",
+      "ban",
+      "palestine",
+      "west",
+      "bank",
+      "miliband",
+      "sanctions"
+    ]
+  },
+  {
+    "slug": "article-europe-trump-putin-peace-channel.html",
+    "headline": "Trump and Putin Reopen Ukraine Peace Channel as Washington Pushes for an End to the War",
+    "category": "EUROPE",
+    "desc": "Trump and Putin held direct talks on September 8 following a Witkoff-Kushner mission to Moscow and Kyiv. Territory remains the core obstacle.",
+    "image": "banner2-trump-putin-peace-channel.jpg",
+    "date": "2026-09-09",
+    "byline": "Stream26 Europe Desk",
+    "readtime": "5 min read",
+    "trending": true,
+    "tags": [
+      "trump",
+      "putin",
+      "ukraine",
+      "peace",
+      "talks",
+      "russia",
+      "zelenskyy",
+      "witkoff",
+      "kushner"
+    ]
+  },
+  {
+    "slug": "article-global-lindsay-clancy-mistrial.html",
+    "headline": "Lindsay Clancy Case Takes New Turn After Mistrial as Lawyer Appeals to Trump for Pardon",
+    "category": "GLOBAL",
+    "desc": "A Massachusetts jury deadlocked 11-1 in the murder case of Lindsay Clancy, who says postpartum psychosis left her not criminally responsible for killing her three children.",
+    "image": "banner2-lindsay-clancy-mistrial.jpg",
+    "date": "2026-09-09",
+    "byline": "Stream26 Global Desk",
+    "readtime": "7 min read",
+    "trending": false,
+    "tags": [
+      "lindsay",
+      "clancy",
+      "mistrial",
+      "pardon",
+      "trump",
+      "massachusetts",
+      "postpartum",
+      "psychosis"
+    ]
+  },
+  {
+    "slug": "article-nigeria-peter-obi-benue-convoy.html",
+    "headline": "Peter Obi's Convoy Blocked by Benue Youths as Political Tensions Rise Ahead of 2027",
+    "category": "NIGERIA",
+    "desc": "Police confirm Peter Obi's convoy was blocked by youths on the Gboko-Makurdi road as he headed to Yelwata to visit families of the 2025 massacre.",
+    "image": "banner2-peter-obi-benue-convoy.jpg",
+    "date": "2026-09-09",
+    "byline": "Stream26 Nigeria Desk",
+    "readtime": "5 min read",
+    "trending": true,
+    "tags": [
+      "peter",
+      "obi",
+      "benue",
+      "convoy",
+      "yelwata",
+      "election",
+      "alia",
+      "nigeria"
+    ]
   }
 ]
