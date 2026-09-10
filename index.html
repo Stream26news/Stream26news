@@ -153,6 +153,7 @@
     .masthead-meta{text-align:left;}
   }
   @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} }
+.brand-name-text{display:block;font-family:'Fraunces',serif;font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;margin-top:3px;}.brand-name-text .bn-stream{color:var(--red);}.brand-name-text .bn-26{color:var(--ink);}.brand-name-text .bn-news{color:var(--red);font-style:italic;font-size:.82em;}
 </style>
 <!-- Google Search Console verification -->
 <meta name="google-site-verification" content="4DyuSt94bgTSvQYixpfFBQ7Fmu5mZCUQdXfLOA5Xkyo" />
@@ -162,7 +163,7 @@
   "@context": "https://schema.org",
   "@type": "NewsMediaOrganization",
   "name": "Stream26 News",
-  "alternateName": "S26 News",
+  "alternateName": ["Stream26", "S26 News", "S26"],
   "url": "https://stream26news.pages.dev/",
   "logo": "https://stream26news.pages.dev/logo-wide.png",
   "sameAs": []
@@ -226,7 +227,7 @@
 
 <header class="masthead">
   <div class="wrap">
-    <a href="index.html"><img class="logo-img" src="logo-wide.png" alt="Stream26 News"></a>
+    <a href="index.html" style="display:flex;flex-direction:column;align-items:flex-start;"><img class="logo-img" src="logo-wide.png" alt="Stream26 News"><span class="brand-name-text"><span class="bn-stream">Stream</span><span class="bn-26">26</span> <span class="bn-news">News</span></span></a>
     <div class="header-right">
       <div class="search-wrap">
         <input type="text" id="siteSearch" class="search-input" placeholder="Search news…" autocomplete="off">
