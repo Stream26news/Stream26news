@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://stream26news.pages.dev/sitemap-main.xml
-Sitemap: https://stream26news.pages.dev/news-sitemap.xml
+Sitemap: https://stream26news.pages.dev/sitemap-index.xml
