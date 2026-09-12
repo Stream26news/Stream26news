@@ -266,18 +266,6 @@
     </news:news>
   </url>
   <url>
-    <loc>https://stream26news.pages.dev/article-sports-arsenal-villa-preview.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Stream26 News</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-24</news:publication_date>
-      <news:title>Arsenal Could Unleash New Signings Against Aston Villa</news:title>
-      <news:keywords>Football News, Sports</news:keywords>
-    </news:news>
-  </url>
-  <url>
     <loc>https://stream26news.pages.dev/article-sports-barcola-transfer.html</loc>
     <news:news>
       <news:publication>
@@ -322,18 +310,6 @@
       </news:publication>
       <news:publication_date>2026-08-24</news:publication_date>
       <news:title>Liverpool Break the British Transfer Record to Sign Alexander Isak</news:title>
-      <news:keywords>Football News, Sports</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://stream26news.pages.dev/article-sports-matchday1-premier-league.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Stream26 News</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-24</news:publication_date>
-      <news:title>Premier League 2026/27 Kicks Off: Matchday 1 in Full Swing</news:title>
       <news:keywords>Football News, Sports</news:keywords>
     </news:news>
   </url>
@@ -647,6 +623,42 @@
       <news:publication_date>2026-09-09</news:publication_date>
       <news:title>Peter Obi's Convoy Blocked by Benue Youths as Political Tensions Rise Ahead of 2027</news:title>
       <news:keywords>Nigerian News, Politics</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://stream26news.pages.dev/article-sports-mbappe-ballon-dor.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Stream26 News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-12</news:publication_date>
+      <news:title>Mbappé Makes His Case for the Ballon d'Or</news:title>
+      <news:keywords>Sports/Football, Awards</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://stream26news.pages.dev/article-sports-city-united-derby.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Stream26 News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-12</news:publication_date>
+      <news:title>Manchester Derby: City Visit Old Trafford</news:title>
+      <news:keywords>Sports/Football, Premier League</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://stream26news.pages.dev/article-sports-ronaldo-1000-goals.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Stream26 News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-12</news:publication_date>
+      <news:title>Ronaldo Nears 1,000 Career Goals</news:title>
+      <news:keywords>Sports/Football, Milestones</news:keywords>
     </news:news>
   </url>
 </urlset>
