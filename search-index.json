@@ -58,7 +58,7 @@
     "date": "2026-08-24",
     "byline": "Stream26 Africa Desk",
     "readtime": "7 min read",
-    "trending": false,
+    "trending": true,
     "tags": [
       "zambia's",
       "opposition",
@@ -549,6 +549,31 @@
     ]
   },
   {
+    "slug": "article-sports-arsenal-villa-preview.html",
+    "headline": "Arsenal Could Unleash New Signings Against Aston Villa",
+    "category": "SPORTS",
+    "desc": "Arsenal could introduce Bruno Guimaraes and Ezri Konsa against Aston Villa, with Konsa potentially facing his former club in his first appearance.",
+    "image": "banner2-arsenal-villa.jpg",
+    "date": "2026-08-24",
+    "byline": "Stream26 Sports Desk",
+    "readtime": "3 min read",
+    "trending": false,
+    "tags": [
+      "arsenal",
+      "could",
+      "unleash",
+      "signings",
+      "against",
+      "aston",
+      "villa",
+      "introduce",
+      "bruno",
+      "guimaraes",
+      "ezri",
+      "konsa"
+    ]
+  },
+  {
     "slug": "article-sports-barcola-transfer.html",
     "headline": "Liverpool Complete Bradley Barcola Deal in \u00a3107m-Plus Transfer From PSG",
     "category": "SPORTS",
@@ -646,6 +671,31 @@
       "completed",
       "swedish",
       "striker"
+    ]
+  },
+  {
+    "slug": "article-sports-matchday1-premier-league.html",
+    "headline": "Premier League 2026/27 Kicks Off: Matchday 1 in Full Swing",
+    "category": "SPORTS",
+    "desc": "The 2026/27 Premier League season is underway, with Arsenal entering as defending champions and a full Matchday 1 fixture list live today.",
+    "image": "banner-premierleague.jpg",
+    "date": "2026-08-24",
+    "byline": "Stream26 Sports Desk",
+    "readtime": "3 min read",
+    "trending": false,
+    "tags": [
+      "premier",
+      "league",
+      "kicks",
+      "matchday",
+      "full",
+      "swing",
+      "season",
+      "underway",
+      "arsenal",
+      "entering",
+      "defending",
+      "champions"
     ]
   },
   {
@@ -1250,7 +1300,7 @@
     "date": "2026-09-09",
     "byline": "Stream26 Global Desk",
     "readtime": "7 min read",
-    "trending": true,
+    "trending": false,
     "tags": [
       "lindsay",
       "clancy",
@@ -1271,7 +1321,7 @@
     "date": "2026-09-09",
     "byline": "Stream26 Nigeria Desk",
     "readtime": "5 min read",
-    "trending": true,
+    "trending": false,
     "tags": [
       "peter",
       "obi",
@@ -1284,58 +1334,26 @@
     ]
   },
   {
-    "slug": "article-sports-mbappe-ballon-dor.html",
-    "headline": "Mbapp\u00e9 Makes His Case for the Ballon d'Or",
-    "category": "SPORTS",
-    "desc": "Kylian Mbapp\u00e9 says his individual season, including a record World Cup scoring run, deserves the 2026 Ballon d'Or.",
-    "image": "banner-mbappe-ballon-dor.jpg",
-    "date": "2026-09-12",
-    "byline": "Stream26 Sports Desk",
-    "readtime": "3 min read",
+    "slug": "article-global-trump-lake-america.html",
+    "headline": "Trump Renames Lake Ontario \u201cLake America\u201d in Escalating Canada Trade Dispute",
+    "category": "GLOBAL",
+    "desc": "President Trump has signed an executive order renaming Lake Ontario \u201cLake America,\u201d directing federal agencies to adopt the new name within 30 days. Canada has rejected the change.",
+    "image": "banner2-trump-lake-america.jpg",
+    "date": "2026-08-27",
+    "byline": "Stream26 Global Desk",
+    "readtime": "5 min read",
     "trending": true,
     "tags": [
-      "mbappe",
-      "ballon d'or",
-      "real madrid",
-      "world cup",
-      "france"
-    ]
-  },
-  {
-    "slug": "article-sports-city-united-derby.html",
-    "headline": "Manchester Derby: City Visit Old Trafford",
-    "category": "SPORTS",
-    "desc": "Manchester City arrive at Old Trafford with a perfect start under Enzo Maresca, as Michael Carrick's United face an early test.",
-    "image": "banner-city-united-derby.jpg",
-    "date": "2026-09-12",
-    "byline": "Stream26 Sports Desk",
-    "readtime": "4 min read",
-    "trending": true,
-    "tags": [
-      "manchester city",
-      "manchester united",
-      "premier league",
-      "derby",
-      "maresca",
-      "carrick"
-    ]
-  },
-  {
-    "slug": "article-sports-ronaldo-1000-goals.html",
-    "headline": "Ronaldo Nears 1,000 Career Goals",
-    "category": "SPORTS",
-    "desc": "Cristiano Ronaldo is 21 goals from 1,000 career goals after scoring in Al Nassr's win over Abha, with Al Khaleej up next.",
-    "image": "banner-ronaldo-1000-goals.jpg",
-    "date": "2026-09-12",
-    "byline": "Stream26 Sports Desk",
-    "readtime": "3 min read",
-    "trending": true,
-    "tags": [
-      "ronaldo",
-      "al nassr",
-      "saudi pro league",
-      "goals",
-      "milestone"
+      "trump",
+      "lake",
+      "ontario",
+      "america",
+      "canada",
+      "trade",
+      "war",
+      "renaming",
+      "gulf",
+      "mexico"
     ]
   }
 ]
