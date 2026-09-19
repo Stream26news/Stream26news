@@ -76,11 +76,11 @@ h1.headline{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(28px,5v
 .badge.verified{background:#E8F5E9;color:#1B6E2B;}
 .badge.developing{background:#FFF3E0;color:#B15C00;}
 .badge.explainer{background:#EFEAFB;color:#5A3AC2;}
-.banner{width:100%;aspect-ratio:16/9;border-radius:4px;position:relative;overflow:hidden;margin-bottom:26px;display:flex;align-items:flex-end;padding:18px 22px;box-shadow:0 4px 24px rgba(0,0,0,.2);background-size:cover;background-position:center;}
-.banner::after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.82) 0%,rgba(0,0,0,.22) 20%,rgba(0,0,0,0) 36%);}
-.banner .banner-text{position:relative;z-index:2;color:#fff;font-family:'Fraunces',serif;font-weight:700;font-size:clamp(18px,3vw,26px);line-height:1.18;max-width:92%;text-shadow:0 2px 10px rgba(0,0,0,.5);}
-.banner .banner-tag{position:absolute;z-index:2;top:20px;left:20px;background:var(--red);color:#fff;font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 10px;border-radius:3px;box-shadow:0 2px 8px rgba(0,0,0,.3);}
-.banner .ai-label{position:absolute;z-index:2;top:20px;right:20px;background:rgba(0,0,0,.6);color:#fff;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:4px 8px;border-radius:3px;border:1px solid rgba(255,255,255,.3);}
+.banner{width:100%;aspect-ratio:16/9;border-radius:4px;overflow:hidden;margin-bottom:8px;box-shadow:0 4px 24px rgba(0,0,0,.2);background-size:cover;background-position:center;}
+
+.img-caption{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ink-soft);margin:0 0 26px;padding-bottom:14px;border-bottom:1px solid var(--rule);line-height:1.5;}
+
+
 .banner .banner-dots{position:absolute;z-index:1;bottom:0;left:0;width:100%;height:60%;background-image:radial-gradient(rgba(255,255,255,.14) 1.5px, transparent 1.5px);background-size:14px 14px;mask-image:linear-gradient(0deg, rgba(0,0,0,.9) 0%, transparent 100%);}
 .quote-block{border-left:4px solid var(--red);background:var(--paper-dim);padding:18px 22px;margin:26px 0;font-family:'Fraunces',serif;font-style:italic;font-size:18px;line-height:1.5;color:var(--ink);}
 .quote-block cite{display:block;margin-top:10px;font-family:'IBM Plex Mono',monospace;font-style:normal;font-size:12px;font-weight:600;letter-spacing:.04em;color:var(--ink-soft);text-transform:uppercase;}
@@ -106,6 +106,7 @@ footer.site{padding:32px 0 60px;font-family:'IBM Plex Mono',monospace;font-size:
 footer.site .wrap{max-width:1240px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;}
 footer.site img{height:34px;}
 .brand-name-text{display:block;font-family:'Fraunces',serif;font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;margin-top:3px;}.brand-name-text .bn-stream{color:var(--red);}.brand-name-text .bn-26{color:var(--ink);}.brand-name-text .bn-news{color:var(--red);font-style:italic;font-size:.82em;}
+.breadcrumbs{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--ink-soft);margin:14px 0 6px;}.breadcrumbs a{color:var(--ink-soft);text-decoration:none;}.breadcrumbs a:hover{color:var(--red);}.breadcrumbs span.sep{margin:0 6px;color:var(--rule);}
 </style>
 <script type="application/ld+json">
 {
@@ -144,18 +145,17 @@ footer.site img{height:34px;}
 </header>
 
 <main class="wrap">
+  <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><a href="category-european.html">European News</a><span class="sep">/</span><span aria-current="page">Trump and Putin Reopen Ukraine Peace Channel as Washington Pushes for an End to the War</span></nav>
   <span class="kicker">Europe / United States · Developing</span>
   <h1 class="headline">Trump and Putin Reopen Ukraine Peace Channel as Washington Pushes for an End to the War</h1>
   <div class="byline-row">
     <span class="badge developing">Developing Story</span>
-    <span><b>Stream26 Europe Desk</b></span>
+    <span><b>Stream26 News</b></span>
     <span>· 5 min read</span>
   </div>
 
-  <div class="banner" style="background-image:url('banner2-trump-putin-peace-channel.jpg')">
-    <span class="banner-tag">EUROPE</span>
-    <div class="banner-text">Trump and Putin reopen direct channel on Ukraine</div>
-  </div>
+  <div class="banner" style="background-image:url('banner2-trump-putin-peace-channel.jpg')"></div>
+  <div class="img-caption">Trump and Putin reopen direct channel on Ukraine</div>
 
   <div class="social-bar share-bar-v2 top-share">
   <span class="social-label">Share</span>
@@ -172,23 +172,20 @@ footer.site img{height:34px;}
   <div class="body-text">
       <p>U.S. President Donald Trump and Russian President Vladimir Putin have reopened direct high-level communication over the war in Ukraine, raising fresh hopes of renewed peace negotiations while major disagreements between Moscow and Kyiv remain unresolved.</p>
       <p>The two leaders spoke by telephone on Tuesday, September 8, with the Kremlin saying Trump expressed a desire for a swift end to the war and the restoration of U.S.-Russia relations. The conversation followed a weekend diplomatic mission by U.S. envoys Steve Witkoff and Jared Kushner, who travelled to Moscow and Kyiv as Washington attempted to restart stalled negotiations. According to the Kremlin, both leaders viewed the recent diplomatic efforts positively, and Putin reportedly outlined steps he believed Washington could take to help end the war.</p>
-      <p><b>The diplomatic window</b></p>
       <p>Peace talks between Russia and Ukraine have been stalled for months, so the renewed American effort is significant — but it does not mean an agreement is close. One of the biggest obstacles remains territory: Russia continues to demand concessions that Ukraine has rejected, while Kyiv insists any settlement must protect its sovereignty and territorial integrity. Washington may be able to bring the two sides back to the table, but agreement on substance remains much harder. Kremlin spokesman Dmitry Peskov said Russia sees continued political will for talks, while acknowledging major differences remain.</p>
       </div>
 
   <div class="ad-slot">Ad slot — insert AdSense unit here after approval</div>
 
   <div class="body-text">
-      <p><b>Ukraine still preparing for more war</b></p>
       <p>The diplomatic activity is happening alongside preparations for continued military confrontation. Ukraine's allies have warned that Kyiv needs additional air-defence capacity as it prepares for another difficult winter: Germany has pledged additional Patriot missiles and drones, while Britain has committed £100 million toward strengthening Ukraine's winter defence capability. Ukrainian President Volodymyr Zelenskyy has also indicated he hopes to meet Trump later this month to discuss missile defence and other security issues.</p>
       <p>This creates a complicated picture: the United States is simultaneously trying to push Russia towards negotiations while continuing to support Ukraine's ability to defend itself. Trump has made ending the war one of his major foreign-policy objectives and has argued a settlement could eventually let Washington and Moscow rebuild economic relations. Putin, meanwhile, appears willing to keep the American channel open while maintaining Russia's strategic demands.</p>
-      <p><b>What happens next?</b></p>
       <p>The immediate test will be whether the latest contacts produce an actual negotiating framework. A prisoner exchange could provide one early measure of progress — Trump and Putin have agreed to keep communication channels open, and prisoner exchanges remain one of the few areas of continued limited cooperation. But the central territorial dispute remains unresolved: for Ukraine, accepting Russian demands would carry enormous political and security consequences; for Russia, abandoning them would represent a major retreat from the objectives that have driven the war.</p>
       </div>
 
   <div class="ad-slot">Ad slot — insert AdSense unit here after approval</div>
 
-  <div class="unconfirmed-box"><b>Still developing:</b> This is an important diplomatic opening — not yet a peace deal. The war continues while the diplomacy begins again.</div>
+  <div class="unconfirmed-box">This is an important diplomatic opening — not yet a peace deal. The war continues while the diplomacy begins again.</div>
 
   <div class="social-bar share-bar-v2 bottom-share">
   <span class="social-label">Share</span>

@@ -76,11 +76,11 @@ h1.headline{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(28px,5v
 .badge.verified{background:#E8F5E9;color:#1B6E2B;}
 .badge.developing{background:#FFF3E0;color:#B15C00;}
 .badge.explainer{background:#EFEAFB;color:#5A3AC2;}
-.banner{width:100%;aspect-ratio:16/9;border-radius:4px;position:relative;overflow:hidden;margin-bottom:26px;display:flex;align-items:flex-end;padding:18px 22px;box-shadow:0 4px 24px rgba(0,0,0,.2);background-size:cover;background-position:center;}
-.banner::after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.82) 0%,rgba(0,0,0,.22) 20%,rgba(0,0,0,0) 36%);}
-.banner .banner-text{position:relative;z-index:2;color:#fff;font-family:'Fraunces',serif;font-weight:700;font-size:clamp(18px,3vw,26px);line-height:1.18;max-width:92%;text-shadow:0 2px 10px rgba(0,0,0,.5);}
-.banner .banner-tag{position:absolute;z-index:2;top:20px;left:20px;background:var(--red);color:#fff;font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 10px;border-radius:3px;box-shadow:0 2px 8px rgba(0,0,0,.3);}
-.banner .ai-label{position:absolute;z-index:2;top:20px;right:20px;background:rgba(0,0,0,.6);color:#fff;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:4px 8px;border-radius:3px;border:1px solid rgba(255,255,255,.3);}
+.banner{width:100%;aspect-ratio:16/9;border-radius:4px;overflow:hidden;margin-bottom:8px;box-shadow:0 4px 24px rgba(0,0,0,.2);background-size:cover;background-position:center;}
+
+.img-caption{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ink-soft);margin:0 0 26px;padding-bottom:14px;border-bottom:1px solid var(--rule);line-height:1.5;}
+
+
 .banner .banner-dots{position:absolute;z-index:1;bottom:0;left:0;width:100%;height:60%;background-image:radial-gradient(rgba(255,255,255,.14) 1.5px, transparent 1.5px);background-size:14px 14px;mask-image:linear-gradient(0deg, rgba(0,0,0,.9) 0%, transparent 100%);}
 .quote-block{border-left:4px solid var(--red);background:var(--paper-dim);padding:18px 22px;margin:26px 0;font-family:'Fraunces',serif;font-style:italic;font-size:18px;line-height:1.5;color:var(--ink);}
 .quote-block cite{display:block;margin-top:10px;font-family:'IBM Plex Mono',monospace;font-style:normal;font-size:12px;font-weight:600;letter-spacing:.04em;color:var(--ink-soft);text-transform:uppercase;}
@@ -106,6 +106,7 @@ footer.site{padding:32px 0 60px;font-family:'IBM Plex Mono',monospace;font-size:
 footer.site .wrap{max-width:1240px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;}
 footer.site img{height:34px;}
 .brand-name-text{display:block;font-family:'Fraunces',serif;font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;margin-top:3px;}.brand-name-text .bn-stream{color:var(--red);}.brand-name-text .bn-26{color:var(--ink);}.brand-name-text .bn-news{color:var(--red);font-style:italic;font-size:.82em;}
+.breadcrumbs{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--ink-soft);margin:14px 0 6px;}.breadcrumbs a{color:var(--ink-soft);text-decoration:none;}.breadcrumbs a:hover{color:var(--red);}.breadcrumbs span.sep{margin:0 6px;color:var(--rule);}
 </style>
 <script type="application/ld+json">
 {
@@ -144,18 +145,17 @@ footer.site img{height:34px;}
 </header>
 
 <main class="wrap">
+  <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><a href="category-nigeria.html">Nigerian News</a><span class="sep">/</span><span aria-current="page">Peter Obi's Convoy Blocked by Benue Youths as Political Tensions Rise Ahead of 2027</span></nav>
   <span class="kicker">Nigerian Politics · Developing</span>
   <h1 class="headline">Peter Obi's Convoy Blocked by Benue Youths as Political Tensions Rise Ahead of 2027</h1>
   <div class="byline-row">
     <span class="badge developing">Developing Story</span>
-    <span><b>Stream26 Nigeria Desk</b></span>
+    <span><b>Staff of Stream26 News</b></span>
     <span>· 5 min read</span>
   </div>
 
-  <div class="banner" style="background-image:url('banner2-peter-obi-benue-convoy.jpg')">
-    <span class="banner-tag">NIGERIA</span>
-    <div class="banner-text">Peter Obi's convoy blocked by youths on Benue road</div>
-  </div>
+  <div class="banner" style="background-image:url('banner2-peter-obi-benue-convoy.jpg')"></div>
+  <div class="img-caption">Peter Obi's convoy blocked by youths on Benue road</div>
 
   <div class="social-bar share-bar-v2 top-share">
   <span class="social-label">Share</span>
@@ -173,23 +173,20 @@ footer.site img{height:34px;}
       <p>A political confrontation in Benue State has triggered fresh concerns about Nigeria's approaching 2027 election season after the convoy of Peter Obi, presidential candidate of the Nigeria Democratic Congress, was blocked by youths while he was travelling towards Yelwata.</p>
       <p>The incident happened on Tuesday, September 8, along the Gboko-Makurdi road, as Obi was travelling to Yelwata to visit communities and families affected by the deadly attacks that took place there in 2025. Videos circulating from the scene showed groups of youths obstructing the road and confronting the convoy, some chanting “Peter Obi, go back.”</p>
       <p>The Benue State Police Command has confirmed the convoy was blocked and said its officers were providing security for Obi's movement, though it said the reason for the obstruction was not immediately known and that an investigation was underway — a point made more significant because the incident has already generated competing political accusations.</p>
-      <p><b>Obi's account</b></p>
       <p>Obi said the convoy was stopped by people he described as thugs while he was travelling to sympathise with victims of the earlier violence, and questioned why a politician travelling to console families affected by killings would be prevented from reaching them. Describing the incident as “very very worrisome,” Obi said: “It is ridiculous.” He also appealed to the Inspector-General of Police and other security agencies to intervene, saying: “This rascality cannot be allowed.” Obi said he did not want his convoy to force its way through the blockade because doing so could create further confusion and put people at risk.</p>
       </div>
 
   <div class="ad-slot">Ad slot — insert AdSense unit here after approval</div>
 
   <div class="body-text">
-      <p><b>Benue government rejects the allegation</b></p>
       <p>The Benue State Government has strongly rejected suggestions that Governor Hyacinth Alia or his administration organised the obstruction. Governor Alia's Chief Press Secretary, Tersoo Kula, said the government had no knowledge of what Obi was referring to and denied deploying or supporting thugs, arguing that Obi should have properly coordinated his visit with security agencies and that any legitimate security concerns should be handled by recognised security agencies rather than political groups. The government further suggested the confrontation could be linked to internal political disagreements within Obi's party — an allegation that, like Obi's, has not been established.</p>
-      <p><b>Why Yelwata matters</b></p>
       <p>The destination of Obi's journey gives the incident a deeper context. Yelwata became a symbol of Nigeria's worsening security crisis after a devastating 2025 attack in which more than 200 people were reportedly killed. Obi said his visit was intended to offer condolences and support to affected families rather than function as a conventional campaign event, but the timing is politically significant: Nigeria is moving steadily towards the 2027 general election, opposition parties are already positioning themselves, and Obi's growing political profile means his movements are likely to attract both supporters and opponents.</p>
       <p>The police confirmation establishes that the convoy was indeed obstructed, but not who organised the youths or why — a distinction now at the centre of the developing controversy, with the investigation potentially determining whether anybody organised the blockade, whether political actors were involved, and whether criminal charges should follow.</p>
       </div>
 
   <div class="ad-slot">Ad slot — insert AdSense unit here after approval</div>
 
-  <div class="unconfirmed-box"><b>Still developing:</b> The Benue Police Command's investigation into who organised the blockade, and why, has not yet concluded. Until it does, neither Obi's account nor the state government's denial has been independently established.</div>
+  <div class="unconfirmed-box">The Benue Police Command's investigation into who organised the blockade, and why, has not yet concluded. Until it does, neither Obi's account nor the state government's denial has been independently established.</div>
 
   <div class="social-bar share-bar-v2 bottom-share">
   <span class="social-label">Share</span>
