@@ -32,7 +32,7 @@
   "image": ["https://stream26news.pages.dev/banner2-us-iran-tanker-strikes.jpg"],
   "datePublished": "2026-09-09",
   "dateModified": "2026-09-09",
-  "author": {"@type": "Organization", "name": "Stream26 News", "url": "https://stream26news.pages.dev/"},
+  "author": {"@type": "Person", "name": "Gerald Anthony"},
   "publisher": {
     "@type": "Organization",
     "name": "Stream26 News",
@@ -76,11 +76,11 @@ h1.headline{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(28px,5v
 .badge.verified{background:#E8F5E9;color:#1B6E2B;}
 .badge.developing{background:#FFF3E0;color:#B15C00;}
 .badge.explainer{background:#EFEAFB;color:#5A3AC2;}
-.banner{width:100%;aspect-ratio:16/9;border-radius:4px;position:relative;overflow:hidden;margin-bottom:26px;display:flex;align-items:flex-end;padding:18px 22px;box-shadow:0 4px 24px rgba(0,0,0,.2);background-size:cover;background-position:center;}
-.banner::after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.82) 0%,rgba(0,0,0,.22) 20%,rgba(0,0,0,0) 36%);}
-.banner .banner-text{position:relative;z-index:2;color:#fff;font-family:'Fraunces',serif;font-weight:700;font-size:clamp(18px,3vw,26px);line-height:1.18;max-width:92%;text-shadow:0 2px 10px rgba(0,0,0,.5);}
-.banner .banner-tag{position:absolute;z-index:2;top:20px;left:20px;background:var(--red);color:#fff;font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 10px;border-radius:3px;box-shadow:0 2px 8px rgba(0,0,0,.3);}
-.banner .ai-label{position:absolute;z-index:2;top:20px;right:20px;background:rgba(0,0,0,.6);color:#fff;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:4px 8px;border-radius:3px;border:1px solid rgba(255,255,255,.3);}
+.banner{width:100%;aspect-ratio:16/9;border-radius:4px;overflow:hidden;margin-bottom:8px;box-shadow:0 4px 24px rgba(0,0,0,.2);background-size:cover;background-position:center;}
+
+.img-caption{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ink-soft);margin:0 0 26px;padding-bottom:14px;border-bottom:1px solid var(--rule);line-height:1.5;}
+
+
 .banner .banner-dots{position:absolute;z-index:1;bottom:0;left:0;width:100%;height:60%;background-image:radial-gradient(rgba(255,255,255,.14) 1.5px, transparent 1.5px);background-size:14px 14px;mask-image:linear-gradient(0deg, rgba(0,0,0,.9) 0%, transparent 100%);}
 .quote-block{border-left:4px solid var(--red);background:var(--paper-dim);padding:18px 22px;margin:26px 0;font-family:'Fraunces',serif;font-style:italic;font-size:18px;line-height:1.5;color:var(--ink);}
 .quote-block cite{display:block;margin-top:10px;font-family:'IBM Plex Mono',monospace;font-style:normal;font-size:12px;font-weight:600;letter-spacing:.04em;color:var(--ink-soft);text-transform:uppercase;}
@@ -106,6 +106,7 @@ footer.site{padding:32px 0 60px;font-family:'IBM Plex Mono',monospace;font-size:
 footer.site .wrap{max-width:1240px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;}
 footer.site img{height:34px;}
 .brand-name-text{display:block;font-family:'Fraunces',serif;font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;margin-top:3px;}.brand-name-text .bn-stream{color:var(--red);}.brand-name-text .bn-26{color:var(--ink);}.brand-name-text .bn-news{color:var(--red);font-style:italic;font-size:.82em;}
+.breadcrumbs{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--ink-soft);margin:14px 0 6px;}.breadcrumbs a{color:var(--ink-soft);text-decoration:none;}.breadcrumbs a:hover{color:var(--red);}.breadcrumbs span.sep{margin:0 6px;color:var(--rule);}
 </style>
 <script type="application/ld+json">
 {
@@ -144,18 +145,17 @@ footer.site img{height:34px;}
 </header>
 
 <main class="wrap">
+  <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><a href="category-global.html">Global News</a><span class="sep">/</span><span aria-current="page">US-Iran Conflict Explodes Again as Iran Strikes Back After America Destroys Five Oil Tankers</span></nav>
   <span class="kicker">Global Affairs · Breaking</span>
   <h1 class="headline">US-Iran Conflict Explodes Again as Iran Strikes Back After America Destroys Five Oil Tankers</h1>
   <div class="byline-row">
     <span class="badge developing">Developing Story</span>
-    <span><b>Stream26 Global Desk</b></span>
+    <span><b>Gerald Anthony</b></span>
     <span>· 6 min read</span>
   </div>
 
-  <div class="banner" style="background-image:url('banner2-us-iran-tanker-strikes.jpg')">
-    <span class="banner-tag">GLOBAL</span>
-    <div class="banner-text">Iran strikes back after US destroys five oil tankers</div>
-  </div>
+  <div class="banner" style="background-image:url('banner2-us-iran-tanker-strikes.jpg')"></div>
+  <div class="img-caption">Iran strikes back after US destroys five oil tankers</div>
 
   <div class="social-bar share-bar-v2 top-share">
   <span class="social-label">Share</span>
@@ -175,7 +175,6 @@ footer.site img{height:34px;}
       <p>U.S. Central Command said its forces destroyed five Iranian crude carriers on Tuesday after the Islamic Revolutionary Guard Corps had targeted a U.S. Navy warship with ballistic missiles. U.S. Secretary of State Marco Rubio said the American response would continue if Iran attacked U.S. naval forces, warning: “Iran continues to try to hit U.S. naval ships, and for every time they do that or try to do that, they're going to lose tankers.”</p>
       <p>Iran responded by launching ballistic missiles at a U.S. base near Al Azraq in Jordan. Jordan said its air defences intercepted 18 of the 20 missiles, with the other two falling in unpopulated areas, and reported no casualties.</p>
       <p>But the confrontation did not stop there. Iran-backed Houthi forces in Yemen launched attacks against several cities in southern Saudi Arabia, hitting areas around Khamis Mushait, Abha, Najran and Jazan. Saudi authorities reported 73 people injured, with fires reported at oil-related facilities and satellite imagery showing large plumes of smoke from the targeted areas.</p>
-      <p><b>Why the oil tankers matter</b></p>
       </div>
 
   <div class="ad-slot">Ad slot — insert AdSense unit here after approval</div>
@@ -183,16 +182,14 @@ footer.site img{height:34px;}
   <div class="body-text">
       <p>The destruction of Iranian oil tankers represents a significant escalation because the confrontation is no longer limited to military installations. Iran's ability to export oil is one of the key economic pressure points in the conflict, while the United States has been trying to restrict Iranian exports. Tehran, meanwhile, has repeatedly threatened shipping routes and energy infrastructure in response.</p>
       <p>The Strait of Hormuz remains one of the world's most strategically important oil routes. Any prolonged disruption would affect not only Iran and the Gulf states but also countries across Asia, Europe and Africa that depend on Middle Eastern energy supplies. The latest escalation has already pushed oil prices higher.</p>
-      <p><b>Saudi Arabia now faces a wider threat</b></p>
       <p>The Houthi attacks are particularly significant because Saudi Arabia had previously been able to keep some distance from the direct U.S.-Iran confrontation. Riyadh has fought the Houthis in Yemen for more than a decade, but the conflict had cooled considerably in recent years — the renewed attacks show how quickly the wider confrontation can reactivate old regional battle lines. Iran has also threatened oil shipping connected to Kuwait and Bahrain, creating additional concerns for Gulf energy infrastructure.</p>
-      <p><b>Global consequences</b></p>
       <p>The biggest concern outside the Middle East is what happens to energy prices and international shipping. Brent crude has already been rising rapidly as traders assess the possibility of further disruptions, and the prospect of attacks on tankers, refineries and shipping lanes creates a chain reaction of higher transportation costs, higher fuel prices and potentially renewed inflation — a difficult position for central banks already managing that risk.</p>
       <p>The conflict is therefore no longer simply a confrontation between Washington and Tehran. It is increasingly becoming a test of the stability of the entire Gulf region, and with Iran threatening further action, the possibility of another major escalation remains very real.</p>
       </div>
 
   <div class="ad-slot">Ad slot — insert AdSense unit here after approval</div>
 
-  <div class="unconfirmed-box"><b>Still developing:</b> The scale of further escalation is unknown. This is a distinct flashpoint from the earlier Hormuz strikes covered separately by Stream26 News — both remain live, unresolved threads in the same six-month conflict.</div>
+  <div class="unconfirmed-box">The scale of further escalation is unknown. This is a distinct flashpoint from the earlier Hormuz strikes covered separately by Stream26 News — both remain live, unresolved threads in the same six-month conflict.</div>
 
   <div class="social-bar share-bar-v2 bottom-share">
   <span class="social-label">Share</span>

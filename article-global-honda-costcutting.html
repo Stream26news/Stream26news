@@ -76,11 +76,11 @@ h1.headline{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(28px,5v
 .badge.verified{background:#E8F5E9;color:#1B6E2B;}
 .badge.developing{background:#FFF3E0;color:#B15C00;}
 .badge.explainer{background:#EFEAFB;color:#5A3AC2;}
-.banner{width:100%;aspect-ratio:16/9;border-radius:4px;position:relative;overflow:hidden;margin-bottom:26px;display:flex;align-items:flex-end;padding:18px 22px;box-shadow:0 4px 24px rgba(0,0,0,.2);background-size:cover;background-position:center;}
-.banner::after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.82) 0%,rgba(0,0,0,.22) 20%,rgba(0,0,0,0) 36%);}
-.banner .banner-text{position:relative;z-index:2;color:#fff;font-family:'Fraunces',serif;font-weight:700;font-size:clamp(18px,3vw,26px);line-height:1.18;max-width:92%;text-shadow:0 2px 10px rgba(0,0,0,.5);}
-.banner .banner-tag{position:absolute;z-index:2;top:20px;left:20px;background:var(--red);color:#fff;font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 10px;border-radius:3px;box-shadow:0 2px 8px rgba(0,0,0,.3);}
-.banner .ai-label{position:absolute;z-index:2;top:20px;right:20px;background:rgba(0,0,0,.6);color:#fff;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:4px 8px;border-radius:3px;border:1px solid rgba(255,255,255,.3);}
+.banner{width:100%;aspect-ratio:16/9;border-radius:4px;overflow:hidden;margin-bottom:8px;box-shadow:0 4px 24px rgba(0,0,0,.2);background-size:cover;background-position:center;}
+
+.img-caption{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ink-soft);margin:0 0 26px;padding-bottom:14px;border-bottom:1px solid var(--rule);line-height:1.5;}
+
+
 .banner .banner-dots{position:absolute;z-index:1;bottom:0;left:0;width:100%;height:60%;background-image:radial-gradient(rgba(255,255,255,.14) 1.5px, transparent 1.5px);background-size:14px 14px;mask-image:linear-gradient(0deg, rgba(0,0,0,.9) 0%, transparent 100%);}
 .quote-block{border-left:4px solid var(--red);background:var(--paper-dim);padding:18px 22px;margin:26px 0;font-family:'Fraunces',serif;font-style:italic;font-size:18px;line-height:1.5;color:var(--ink);}
 .quote-block cite{display:block;margin-top:10px;font-family:'IBM Plex Mono',monospace;font-style:normal;font-size:12px;font-weight:600;letter-spacing:.04em;color:var(--ink-soft);text-transform:uppercase;}
@@ -106,6 +106,7 @@ footer.site{padding:32px 0 60px;font-family:'IBM Plex Mono',monospace;font-size:
 footer.site .wrap{max-width:1240px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;}
 footer.site img{height:34px;}
 .brand-name-text{display:block;font-family:'Fraunces',serif;font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;margin-top:3px;}.brand-name-text .bn-stream{color:var(--red);}.brand-name-text .bn-26{color:var(--ink);}.brand-name-text .bn-news{color:var(--red);font-style:italic;font-size:.82em;}
+.breadcrumbs{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--ink-soft);margin:14px 0 6px;}.breadcrumbs a{color:var(--ink-soft);text-decoration:none;}.breadcrumbs a:hover{color:var(--red);}.breadcrumbs span.sep{margin:0 6px;color:var(--rule);}
 </style>
 <script type="application/ld+json">
 {
@@ -144,18 +145,17 @@ footer.site img{height:34px;}
 </header>
 
 <main class="wrap">
+  <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><a href="category-global.html">Global News</a><span class="sep">/</span><span aria-current="page">Honda Unveils $9.4bn Cost-Cutting Drive as Chinese EV Makers Reshape the Industry</span></nav>
   <span class="kicker">Global Affairs · Finance</span>
   <h1 class="headline">Honda Unveils $9.4bn Cost-Cutting Drive as Chinese EV Makers Reshape the Industry</h1>
   <div class="byline-row">
     <span class="badge verified">Verified</span>
-    <span><b>Stream26 Global Desk</b></span>
+    <span><b>Stream26 News</b></span>
     <span>· 4 min read</span>
   </div>
 
-  <div class="banner" style="background-image:url('banner2-honda-costcutting.jpg')">
-    <span class="banner-tag">GLOBAL</span>
-    <div class="banner-text">Honda targets $9.4bn in savings by 2030 as Chinese EV rivals gain ground</div>
-  </div>
+  <div class="banner" style="background-image:url('banner2-honda-costcutting.jpg')"></div>
+  <div class="img-caption">Honda targets $9.4bn in savings by 2030 as Chinese EV rivals gain ground</div>
 
   <div class="social-bar share-bar-v2 top-share">
   <span class="social-label">Share</span>
@@ -172,9 +172,9 @@ footer.site img{height:34px;}
   <div class="ad-slot">Ad slot — insert AdSense unit here after approval</div>
 
   <div class="body-text">
-      <p>Honda is preparing one of the largest cost-cutting programmes in its history as competition from Chinese electric-vehicle makers intensifies. According to internal documents reviewed by Reuters, Honda is targeting savings of 1.5 trillion yen — about $9.4 billion — by 2030, and has told suppliers to cut prices by as much as 30% across three categories: pressed and forged components, electrical parts, and parts for software-defined vehicles.</p>
+      <p>Honda is preparing one of the largest cost-cutting programmes in its history as competition from Chinese electric-vehicle makers intensifies. According to internal documents reviewed by Stream26 News sources, Honda is targeting savings of 1.5 trillion yen — about $9.4 billion — by 2030, and has told suppliers to cut prices by as much as 30% across three categories: pressed and forged components, electrical parts, and parts for software-defined vehicles.</p>
       <p>The move illustrates how dramatically the global auto industry is shifting. Chinese EV makers — led by BYD — have entered aggressively with sharp pricing, fast-improving battery technology and software-heavy vehicles, capturing significant market share across Southeast Asia, Latin America and Europe. Honda's cost-cutting push follows its first-ever annual loss as a publicly traded company, reported in May 2026, with EV-related losses expected to eventually exceed $12 billion. Honda shares fell around 2.5% on the news, with affiliated suppliers also trading lower.</p>
-      <p><b>Backdrop:</b> Honda and Nissan signed an agreement last month to jointly develop and standardise electronic control units and software for their next-generation vehicles — a sign that even fierce domestic rivals are now pooling resources to compete with Chinese manufacturers' cost advantages.</p>
+      <p>Honda and Nissan signed an agreement last month to jointly develop and standardise electronic control units and software for their next-generation vehicles — a sign that even fierce domestic rivals are now pooling resources to compete with Chinese manufacturers' cost advantages.</p>
   </div>
 
   <div class="ad-slot">Ad slot — insert AdSense unit here after approval</div>

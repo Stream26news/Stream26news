@@ -674,31 +674,6 @@
     ]
   },
   {
-    "slug": "article-sports-matchday1-premier-league.html",
-    "headline": "Premier League 2026/27 Kicks Off: Matchday 1 in Full Swing",
-    "category": "SPORTS",
-    "desc": "The 2026/27 Premier League season is underway, with Arsenal entering as defending champions and a full Matchday 1 fixture list live today.",
-    "image": "banner-premierleague.jpg",
-    "date": "2026-08-24",
-    "byline": "Stream26 Sports Desk",
-    "readtime": "3 min read",
-    "trending": false,
-    "tags": [
-      "premier",
-      "league",
-      "kicks",
-      "matchday",
-      "full",
-      "swing",
-      "season",
-      "underway",
-      "arsenal",
-      "entering",
-      "defending",
-      "champions"
-    ]
-  },
-  {
     "slug": "article-sports-rogers-transfer.html",
     "headline": "Chelsea Make Morgan Rogers the Most Expensive British Footballer Ever",
     "category": "SPORTS",
@@ -1354,6 +1329,69 @@
       "renaming",
       "gulf",
       "mexico"
+    ]
+  },
+  {
+    "slug": "article-sports-mbappe-ballon-dor.html",
+    "headline": "Mbapp\u00e9 Makes His Case for the Ballon d'Or",
+    "category": "SPORTS",
+    "desc": "Kylian Mbapp\u00e9 says his individual season, including a record World Cup scoring run, deserves the 2026 Ballon d'Or.",
+    "image": "banner-mbappe-ballon-dor.jpg",
+    "date": "2026-09-12",
+    "byline": "Gerald Anthony",
+    "readtime": "3 min read",
+    "trending": true,
+    "tags": [
+      "mbappe",
+      "ballon",
+      "dor",
+      "psg",
+      "real",
+      "madrid",
+      "world",
+      "cup",
+      "football"
+    ]
+  },
+  {
+    "slug": "article-sports-ronaldo-1000-goals.html",
+    "headline": "Ronaldo Nears 1,000 Career Goals",
+    "category": "SPORTS",
+    "desc": "Cristiano Ronaldo is 21 goals from 1,000 career goals after scoring in Al Nassr's win over Abha, with Al Khaleej up next.",
+    "image": "banner-ronaldo-1000-goals.jpg",
+    "date": "2026-09-12",
+    "byline": "Stream26 News",
+    "readtime": "3 min read",
+    "trending": true,
+    "tags": [
+      "ronaldo",
+      "1000",
+      "goals",
+      "al",
+      "nassr",
+      "career",
+      "football"
+    ]
+  },
+  {
+    "slug": "article-sports-city-united-derby.html",
+    "headline": "Manchester Derby: City Visit Old Trafford",
+    "category": "SPORTS",
+    "desc": "Manchester City arrive at Old Trafford with a perfect start under Enzo Maresca, as Michael Carrick's United face an early test.",
+    "image": "banner-city-united-derby.jpg",
+    "date": "2026-09-12",
+    "byline": "Gerald Anthony",
+    "readtime": "4 min read",
+    "trending": true,
+    "tags": [
+      "manchester",
+      "derby",
+      "city",
+      "united",
+      "old",
+      "trafford",
+      "maresca",
+      "carrick"
     ]
   }
 ]

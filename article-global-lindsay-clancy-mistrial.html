@@ -76,11 +76,11 @@ h1.headline{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(28px,5v
 .badge.verified{background:#E8F5E9;color:#1B6E2B;}
 .badge.developing{background:#FFF3E0;color:#B15C00;}
 .badge.explainer{background:#EFEAFB;color:#5A3AC2;}
-.banner{width:100%;aspect-ratio:16/9;border-radius:4px;position:relative;overflow:hidden;margin-bottom:26px;display:flex;align-items:flex-end;padding:18px 22px;box-shadow:0 4px 24px rgba(0,0,0,.2);background-size:cover;background-position:center;}
-.banner::after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.82) 0%,rgba(0,0,0,.22) 20%,rgba(0,0,0,0) 36%);}
-.banner .banner-text{position:relative;z-index:2;color:#fff;font-family:'Fraunces',serif;font-weight:700;font-size:clamp(18px,3vw,26px);line-height:1.18;max-width:92%;text-shadow:0 2px 10px rgba(0,0,0,.5);}
-.banner .banner-tag{position:absolute;z-index:2;top:20px;left:20px;background:var(--red);color:#fff;font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 10px;border-radius:3px;box-shadow:0 2px 8px rgba(0,0,0,.3);}
-.banner .ai-label{position:absolute;z-index:2;top:20px;right:20px;background:rgba(0,0,0,.6);color:#fff;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:4px 8px;border-radius:3px;border:1px solid rgba(255,255,255,.3);}
+.banner{width:100%;aspect-ratio:16/9;border-radius:4px;overflow:hidden;margin-bottom:8px;box-shadow:0 4px 24px rgba(0,0,0,.2);background-size:cover;background-position:center;}
+
+.img-caption{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ink-soft);margin:0 0 26px;padding-bottom:14px;border-bottom:1px solid var(--rule);line-height:1.5;}
+
+
 .banner .banner-dots{position:absolute;z-index:1;bottom:0;left:0;width:100%;height:60%;background-image:radial-gradient(rgba(255,255,255,.14) 1.5px, transparent 1.5px);background-size:14px 14px;mask-image:linear-gradient(0deg, rgba(0,0,0,.9) 0%, transparent 100%);}
 .quote-block{border-left:4px solid var(--red);background:var(--paper-dim);padding:18px 22px;margin:26px 0;font-family:'Fraunces',serif;font-style:italic;font-size:18px;line-height:1.5;color:var(--ink);}
 .quote-block cite{display:block;margin-top:10px;font-family:'IBM Plex Mono',monospace;font-style:normal;font-size:12px;font-weight:600;letter-spacing:.04em;color:var(--ink-soft);text-transform:uppercase;}
@@ -106,6 +106,7 @@ footer.site{padding:32px 0 60px;font-family:'IBM Plex Mono',monospace;font-size:
 footer.site .wrap{max-width:1240px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;}
 footer.site img{height:34px;}
 .brand-name-text{display:block;font-family:'Fraunces',serif;font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;margin-top:3px;}.brand-name-text .bn-stream{color:var(--red);}.brand-name-text .bn-26{color:var(--ink);}.brand-name-text .bn-news{color:var(--red);font-style:italic;font-size:.82em;}
+.breadcrumbs{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--ink-soft);margin:14px 0 6px;}.breadcrumbs a{color:var(--ink-soft);text-decoration:none;}.breadcrumbs a:hover{color:var(--red);}.breadcrumbs span.sep{margin:0 6px;color:var(--rule);}
 </style>
 <script type="application/ld+json">
 {
@@ -144,18 +145,17 @@ footer.site img{height:34px;}
 </header>
 
 <main class="wrap">
+  <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><a href="category-global.html">Global News</a><span class="sep">/</span><span aria-current="page">Lindsay Clancy Case Takes New Turn After Mistrial as Lawyer Appeals to Trump for Pardon</span></nav>
   <span class="kicker">United States · Developing</span>
   <h1 class="headline">Lindsay Clancy Case Takes New Turn After Mistrial as Lawyer Appeals to Trump for Pardon</h1>
   <div class="byline-row">
     <span class="badge developing">Developing Story</span>
-    <span><b>Stream26 Global Desk</b></span>
+    <span><b>Stream26 News</b></span>
     <span>· 7 min read</span>
   </div>
 
-  <div class="banner" style="background-image:url('banner2-lindsay-clancy-mistrial.jpg')">
-    <span class="banner-tag">GLOBAL</span>
-    <div class="banner-text">Lawyer appeals to Trump for pardon after Clancy mistrial</div>
-  </div>
+  <div class="banner" style="background-image:url('banner2-lindsay-clancy-mistrial.jpg')"></div>
+  <div class="img-caption">Lawyer appeals to Trump for pardon after Clancy mistrial</div>
 
   <div class="social-bar share-bar-v2 top-share">
   <span class="social-label">Share</span>
@@ -173,23 +173,20 @@ footer.site img{height:34px;}
       <p>The murder case against Massachusetts mother Lindsay Clancy, who admitted killing her three young children but argued she was not criminally responsible because of severe postpartum psychosis, has entered another extraordinary phase following the collapse of her first trial.</p>
       <p>The latest development came on Tuesday, September 8, when Clancy's defence lawyer, Kevin Reddington, publicly appealed to U.S. President Donald Trump to consider granting her a pardon. The request immediately raised a major legal question: Clancy's case is being prosecuted under Massachusetts state law, while presidential pardon powers apply to federal offences.</p>
       <p>The appeal came only days after a Massachusetts jury failed to reach the unanimous verdict required to resolve the case. Judge William Sullivan declared a mistrial on September 4 after the 12-member jury remained deadlocked following more than 38 hours of deliberations. The jury reportedly split 11-1, with 11 jurors favouring a finding that Clancy was not criminally responsible while one juror would not agree. Several jurors have since described the holdout as unwilling to accept their interpretation of reasonable doubt, though those accounts represent the jurors' own descriptions of deliberations, not a judicial finding.</p>
-      <p><b>The killings that shocked Massachusetts</b></p>
       <p>Clancy was charged over the January 2023 deaths of her children: Cora, 5; Dawson, 3; and Callan, 8 months. She does not deny killing them — the central legal question has always been whether she was criminally responsible at the time. Prosecutors argued she deliberately killed the children and understood what she was doing; the defence argued she was experiencing severe postpartum psychosis, worsened by the treatment and medication she received beforehand, and had become detached from reality. Forensic psychiatrist Dr Phillip Resnick testified that Clancy was suffering from severe mental illness and described her as “frankly psychotic” at the time of the killings. After the killings, Clancy attempted to take her own life by cutting herself and jumping from a second-storey window; she survived but was left paralysed and has remained in psychiatric custody.</p>
       </div>
 
   <div class="ad-slot">Ad slot — insert AdSense unit here after approval</div>
 
   <div class="body-text">
-      <p><b>The prosecution is not finished</b></p>
       <p>The mistrial does not mean Clancy has been acquitted. The murder charges remain in place, and prosecutors have the option of trying her again. Plymouth County District Attorney Timothy Cruz has said his office has made no decision yet on whether to pursue another trial. A further court hearing is scheduled for later this month. Clancy's lawyer is now attempting another route by asking Trump to intervene, but the legal obstacle is substantial: a president does not ordinarily have authority to pardon someone convicted or prosecuted under state law, making the request more political and symbolic than an immediately available legal solution. Trump has previously described the killings as a terrible tragedy and suggested Clancy could ultimately face imprisonment or psychiatric institutionalisation.</p>
-      <p><b>A case bigger than the courtroom</b></p>
       <p>The Clancy case has become an international talking point because it sits at the intersection of criminal justice, maternal mental health, postpartum psychosis and the responsibilities of healthcare providers. The defence's argument has forced renewed scrutiny of how Clancy's deteriorating mental condition was recognised and treated before the killings, while the prosecution's position raises an equally important legal question: how should the justice system distinguish between severe mental illness and criminal responsibility when the accused has nevertheless carried out deliberate physical acts?</p>
       <p>For now, there is no final verdict. The three children are dead, Clancy remains charged, and the first jury could not reach a unanimous decision. Her lawyer is seeking extraordinary intervention from the White House, while prosecutors consider what comes next — with the next major chapter expected at the scheduled court proceedings later this month.</p>
       </div>
 
   <div class="ad-slot">Ad slot — insert AdSense unit here after approval</div>
 
-  <div class="unconfirmed-box"><b>Still developing:</b> Prosecutors have not yet decided whether to pursue a second trial, and a president's authority to pardon a state-level conviction remains a live legal question with no resolution yet.</div>
+  <div class="unconfirmed-box">Prosecutors have not yet decided whether to pursue a second trial, and a president's authority to pardon a state-level conviction remains a live legal question with no resolution yet.</div>
 
   <div class="social-bar share-bar-v2 bottom-share">
   <span class="social-label">Share</span>

@@ -32,7 +32,7 @@
   "image": ["https://stream26news.pages.dev/banner2-trump-lake-america.jpg"],
   "datePublished": "2026-08-27",
   "dateModified": "2026-09-14",
-  "author": {"@type": "Organization", "name": "Stream26 News", "url": "https://stream26news.pages.dev/"},
+  "author": {"@type": "Person", "name": "Gerald Anthony"},
   "publisher": {
     "@type": "Organization",
     "name": "Stream26 News",
@@ -76,11 +76,11 @@ h1.headline{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(28px,5v
 .badge.verified{background:#E8F5E9;color:#1B6E2B;}
 .badge.developing{background:#FFF3E0;color:#B15C00;}
 .badge.explainer{background:#EFEAFB;color:#5A3AC2;}
-.banner{width:100%;aspect-ratio:16/9;border-radius:4px;position:relative;overflow:hidden;margin-bottom:26px;display:flex;align-items:flex-end;padding:18px 22px;box-shadow:0 4px 24px rgba(0,0,0,.2);background-size:cover;background-position:center;}
-.banner::after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.82) 0%,rgba(0,0,0,.22) 20%,rgba(0,0,0,0) 36%);}
-.banner .banner-text{position:relative;z-index:2;color:#fff;font-family:'Fraunces',serif;font-weight:700;font-size:clamp(18px,3vw,26px);line-height:1.18;max-width:92%;text-shadow:0 2px 10px rgba(0,0,0,.5);}
-.banner .banner-tag{position:absolute;z-index:2;top:20px;left:20px;background:var(--red);color:#fff;font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 10px;border-radius:3px;box-shadow:0 2px 8px rgba(0,0,0,.3);}
-.banner .ai-label{position:absolute;z-index:2;top:20px;right:20px;background:rgba(0,0,0,.6);color:#fff;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:4px 8px;border-radius:3px;border:1px solid rgba(255,255,255,.3);}
+.banner{width:100%;aspect-ratio:16/9;border-radius:4px;overflow:hidden;margin-bottom:8px;box-shadow:0 4px 24px rgba(0,0,0,.2);background-size:cover;background-position:center;}
+
+.img-caption{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ink-soft);margin:0 0 26px;padding-bottom:14px;border-bottom:1px solid var(--rule);line-height:1.5;}
+
+
 .banner .banner-dots{position:absolute;z-index:1;bottom:0;left:0;width:100%;height:60%;background-image:radial-gradient(rgba(255,255,255,.14) 1.5px, transparent 1.5px);background-size:14px 14px;mask-image:linear-gradient(0deg, rgba(0,0,0,.9) 0%, transparent 100%);}
 .quote-block{border-left:4px solid var(--red);background:var(--paper-dim);padding:18px 22px;margin:26px 0;font-family:'Fraunces',serif;font-style:italic;font-size:18px;line-height:1.5;color:var(--ink);}
 .quote-block cite{display:block;margin-top:10px;font-family:'IBM Plex Mono',monospace;font-style:normal;font-size:12px;font-weight:600;letter-spacing:.04em;color:var(--ink-soft);text-transform:uppercase;}
@@ -106,7 +106,9 @@ footer.site{padding:32px 0 60px;font-family:'IBM Plex Mono',monospace;font-size:
 footer.site .wrap{max-width:1240px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;}
 footer.site img{height:34px;}
 .brand-name-text{display:block;font-family:'Fraunces',serif;font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;margin-top:3px;}.brand-name-text .bn-stream{color:var(--red);}.brand-name-text .bn-26{color:var(--ink);}.brand-name-text .bn-news{color:var(--red);font-style:italic;font-size:.82em;}
+.breadcrumbs{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--ink-soft);margin:14px 0 6px;}.breadcrumbs a{color:var(--ink-soft);text-decoration:none;}.breadcrumbs a:hover{color:var(--red);}.breadcrumbs span.sep{margin:0 6px;color:var(--rule);}
 </style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://stream26news.pages.dev/"},{"@type":"ListItem","position":2,"name":"Global News","item":"https://stream26news.pages.dev/category-global.html"},{"@type":"ListItem","position":3,"name":"Trump Renames Lake Ontario “Lake America” in Escalating Canada Trade Dispute","item":"https://stream26news.pages.dev/article-global-trump-lake-america.html"}]}</script>
 </head>
 <body>
 
@@ -118,18 +120,17 @@ footer.site img{height:34px;}
 </header>
 
 <main class="wrap">
+  <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><a href="category-global.html">Global News</a><span class="sep">/</span><span aria-current="page">Trump Renames Lake Ontario “Lake America” in Escalating Canada Trade Dispute</span></nav>
   <span class="kicker">Global Affairs · Verified</span>
   <h1 class="headline">Trump Renames Lake Ontario “Lake America” in Escalating Canada Trade Dispute</h1>
   <div class="byline-row">
     <span class="badge verified">Verified</span>
-    <span><b>Stream26 Global Desk</b></span>
+    <span><b>Gerald Anthony</b></span>
     <span>· 5 min read</span>
   </div>
 
-  <div class="banner" style="background-image:url('banner2-trump-lake-america.jpg')">
-    <span class="banner-tag">GLOBAL</span>
-    <div class="banner-text">Trump renames Lake Ontario "Lake America"</div>
-  </div>
+  <div class="banner" style="background-image:url('banner2-trump-lake-america.jpg')"></div>
+  <div class="img-caption">Trump renames Lake Ontario "Lake America"</div>
 
   <div class="social-bar share-bar-v2 top-share">
   <span class="social-label">Share</span>
@@ -147,18 +148,15 @@ footer.site img{height:34px;}
       <p>President Donald Trump has signed an executive order renaming Lake Ontario “Lake America,” escalating his trade standoff with Canada and extending a pattern of geographic rebranding that began with the Gulf of Mexico earlier in his second term.</p>
       <p>Trump signed the order in the Oval Office, flanked by large maps of the Great Lakes labelled “Making the Great Lakes Even Greater,” with “Lake America” printed over Lake Ontario. “This is official, effective immediately,” Trump said, adding that he had filed all the necessary paperwork for the change. He said the idea was something he had been thinking about for a long time, and joked that with a gulf and a lake now renamed, an ocean could be next.</p>
       <p>The order directs the Interior Secretary and the U.S. Board on Geographic Names to formally rename the lake within 30 days, updating the Geographic Names Information System and removing federal references to “Lake Ontario,” while instructing agencies to reflect the new name across maps, contracts and official communications. The change moved quickly: the Geographic Names Information System has already been updated within the U.S., and mapping platforms began displaying “Lake America” for U.S. users within days.</p>
-      <p><b>Tied to the Canada trade war</b></p>
       </div>
 
   <div class="ad-slot">Ad slot — insert AdSense unit here after approval</div>
 
   <div class="body-text">
       <p>Trump had repeatedly threatened the renaming amid an escalating trade dispute with Canada, and denied any symbolic message behind it, saying Canada had been “ripping us off for a long time on trade” and that the country “want[s] to be treated like a state, but they're not a state.” The move came as trade negotiations between the two countries collapsed, with both sides accusing each other of last-minute changes to a prior agreement, and Canada moving ahead with retaliatory measures.</p>
-      <p><b>Canada pushes back</b></p>
       <p>Canada's Prime Minister noted that the name Lake Ontario, from the Indigenous Wendat word for “the lake is beautiful, the lake is big,” predates both Canadian Confederation and the U.S. Declaration of Independence. Ontario's provincial premier went further, unveiling a lakeside billboard reading “Lake Ontario — Now and Always.” New York's state governor also rejected the change for her own state, saying simply that New York would not be using the new name. Legal analysts note the U.S. president has wide authority over how the federal government refers to geographic landmarks domestically, but no power to compel other countries — or U.S. states — to adopt a new name.</p>
-      <p><b>Part of a wider pattern</b></p>
       <p>The Lake Ontario order follows the renaming of the Gulf of Mexico as the “Gulf of America” at the start of Trump's second term — the first in what commentators have described as a pattern of place-naming used to project “America First” branding onto the map itself. Both renamings share the same mechanism: an executive order applies automatically across federal agencies, maps and documents, while carrying no legal weight internationally, meaning Mexico continues to use its original name for the gulf, just as Canada is doing with Lake Ontario.</p>
-      <p><b>Backdrop:</b> Whether “Lake America” and “Gulf of America” become the names most people actually use day-to-day will likely hinge less on the paperwork than on whether mapmakers, media and the public adopt them — a test the Gulf of Mexico rebrand is still working through more than a year on.</p>
+      <p>Whether “Lake America” and “Gulf of America” become the names most people actually use day-to-day will likely hinge less on the paperwork than on whether mapmakers, media and the public adopt them — a test the Gulf of Mexico rebrand is still working through more than a year on.</p>
   </div>
 
   <div class="ad-slot">Ad slot — insert AdSense unit here after approval</div>
