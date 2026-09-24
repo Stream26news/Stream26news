@@ -685,4 +685,112 @@
       <news:keywords>Sports, Football</news:keywords>
     </news:news>
   </url>
+  <url>
+    <loc>https://stream26news.pages.dev/article-global-cnn-msnow-politico-lawsuit.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Stream26 News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-21</news:publication_date>
+      <news:title>CNN, MS NOW and Politico Sue Trump Administration</news:title>
+      <news:keywords>Global News</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://stream26news.pages.dev/article-global-trump-mamdani-meeting.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Stream26 News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-21</news:publication_date>
+      <news:title>Trump Meets New York Mayor Mamdani at Gracie Mansion</news:title>
+      <news:keywords>Global News</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://stream26news.pages.dev/article-global-us-china-ai-safety-channel.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Stream26 News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-21</news:publication_date>
+      <news:title>US and China Open Talks on an AI Safety Channel</news:title>
+      <news:keywords>Global News</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://stream26news.pages.dev/article-europe-uk-prestwick-air-traffic-failure.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Stream26 News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-21</news:publication_date>
+      <news:title>UK Air Traffic Failure Disrupts Flights Again</news:title>
+      <news:keywords>European News</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://stream26news.pages.dev/article-europe-uk-consumer-confidence-low.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Stream26 News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-21</news:publication_date>
+      <news:title>UK Consumer Confidence Falls to Three-Year Low</news:title>
+      <news:keywords>European News</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://stream26news.pages.dev/article-europe-uk-saudi-air-refuelling.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Stream26 News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-21</news:publication_date>
+      <news:title>UK Agrees Limited Saudi Air-Refuelling Support</news:title>
+      <news:keywords>European News</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://stream26news.pages.dev/article-sports-messi-930-career-goals.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Stream26 News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-20</news:publication_date>
+      <news:title>Messi Reaches 930 Career Goals in Miami Draw</news:title>
+      <news:keywords>Sports</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://stream26news.pages.dev/article-sports-cole-palmer-withdraws-england.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Stream26 News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-21</news:publication_date>
+      <news:title>Cole Palmer Withdraws From England Squad Injured</news:title>
+      <news:keywords>Sports</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://stream26news.pages.dev/article-sports-man-utd-fulham-draw.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Stream26 News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-20</news:publication_date>
+      <news:title>Manchester United Rescue Late Point at Fulham</news:title>
+      <news:keywords>Sports</news:keywords>
+    </news:news>
+  </url>
 </urlset>

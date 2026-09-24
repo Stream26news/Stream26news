@@ -1393,5 +1393,179 @@
       "maresca",
       "carrick"
     ]
+  },
+  {
+    "slug": "article-global-cnn-msnow-politico-lawsuit.html",
+    "headline": "CNN, MS NOW and Politico Sue Trump Administration",
+    "category": "GLOBAL",
+    "desc": "CNN, MS NOW and Politico filed a federal lawsuit challenging the White House decision to bar their journalists, arguing the ban violates First Amendment protections for independent journalism.",
+    "image": "banner2-cnn-msnow-politico-lawsuit.jpg",
+    "date": "2026-09-21",
+    "byline": "Gerald Anthony",
+    "readtime": "5 min read",
+    "trending": true,
+    "tags": [
+      "cnn",
+      "now",
+      "and",
+      "politico",
+      "sue",
+      "trump",
+      "administration"
+    ]
+  },
+  {
+    "slug": "article-global-trump-mamdani-meeting.html",
+    "headline": "Trump Meets New York Mayor Mamdani at Gracie Mansion",
+    "category": "GLOBAL",
+    "desc": "President Trump met New York Mayor Zohran Mamdani at Gracie Mansion, their first in-person meeting at the mayoral residence, as Trump began a high-profile week of UN engagements.",
+    "image": "banner2-trump-mamdani-meeting.jpg",
+    "date": "2026-09-21",
+    "byline": "Staff of Stream26 News",
+    "readtime": "5 min read",
+    "trending": true,
+    "tags": [
+      "trump",
+      "meets",
+      "new",
+      "york",
+      "mayor",
+      "mamdani",
+      "gracie",
+      "mansion"
+    ]
+  },
+  {
+    "slug": "article-global-us-china-ai-safety-channel.html",
+    "headline": "US and China Open Talks on an AI Safety Channel",
+    "category": "GLOBAL",
+    "desc": "The United States and China have begun discussions on a formal channel for addressing AI risks, with senior officials meeting in New York ahead of Trump's planned meeting with Xi Jinping.",
+    "image": "banner2-us-china-ai-safety.jpg",
+    "date": "2026-09-21",
+    "byline": "Gerald Anthony",
+    "readtime": "5 min read",
+    "trending": true,
+    "tags": [
+      "and",
+      "china",
+      "open",
+      "talks",
+      "safety",
+      "channel"
+    ]
+  },
+  {
+    "slug": "article-europe-uk-prestwick-air-traffic-failure.html",
+    "headline": "UK Air Traffic Failure Disrupts Flights Again",
+    "category": "EUROPE",
+    "desc": "A new connectivity failure at Prestwick air traffic control disrupted flights across Britain, affecting Manchester, Glasgow and Belfast and raising fresh concerns about system resilience.",
+    "image": "banner2-uk-prestwick-air-traffic.jpg",
+    "date": "2026-09-21",
+    "byline": "Staff of Stream26 News",
+    "readtime": "5 min read",
+    "trending": true,
+    "tags": [
+      "air",
+      "traffic",
+      "failure",
+      "disrupts",
+      "flights",
+      "again"
+    ]
+  },
+  {
+    "slug": "article-europe-uk-consumer-confidence-low.html",
+    "headline": "UK Consumer Confidence Falls to Three-Year Low",
+    "category": "EUROPE",
+    "desc": "Consumer confidence in the UK has dropped to its lowest level in three years, as household finances, borrowing costs and job worries weigh on sentiment ahead of the government's budget.",
+    "image": "banner2-uk-consumer-confidence.jpg",
+    "date": "2026-09-21",
+    "byline": "Gerald Anthony",
+    "readtime": "5 min read",
+    "trending": true,
+    "tags": [
+      "consumer",
+      "confidence",
+      "falls",
+      "three-year",
+      "low"
+    ]
+  },
+  {
+    "slug": "article-europe-uk-saudi-air-refuelling.html",
+    "headline": "UK Agrees Limited Saudi Air-Refuelling Support",
+    "category": "EUROPE",
+    "desc": "PM Andy Burnham says the UK will provide Saudi Arabia with limited defensive air-to-air refuelling support after renewed Houthi attacks, deploying one Voyager aircraft.",
+    "image": "banner2-uk-saudi-air-refuelling.jpg",
+    "date": "2026-09-21",
+    "byline": "Staff of Stream26 News",
+    "readtime": "5 min read",
+    "trending": true,
+    "tags": [
+      "agrees",
+      "limited",
+      "saudi",
+      "air-refuelling",
+      "support"
+    ]
+  },
+  {
+    "slug": "article-sports-messi-930-career-goals.html",
+    "headline": "Messi Reaches 930 Career Goals in Miami Draw",
+    "category": "SPORTS",
+    "desc": "Lionel Messi scored a free-kick to reach 930 career goals as Inter Miami drew 2-2 with San Diego FC, days after also reaching 100 goals for the club.",
+    "image": "banner2-messi-930-goals.jpg",
+    "date": "2026-09-20",
+    "byline": "Gerald Anthony",
+    "readtime": "4 min read",
+    "trending": true,
+    "tags": [
+      "messi",
+      "reaches",
+      "930",
+      "career",
+      "goals",
+      "miami",
+      "draw"
+    ]
+  },
+  {
+    "slug": "article-sports-cole-palmer-withdraws-england.html",
+    "headline": "Cole Palmer Withdraws From England Squad Injured",
+    "category": "SPORTS",
+    "desc": "Chelsea's Cole Palmer has withdrawn from England's squad with a muscle injury, ruling him out of the opening Nations League matches and deepening Thomas Tuchel's selection problems.",
+    "image": "banner2-cole-palmer-injury.jpg",
+    "date": "2026-09-21",
+    "byline": "Staff of Stream26 News",
+    "readtime": "4 min read",
+    "trending": true,
+    "tags": [
+      "cole",
+      "palmer",
+      "withdraws",
+      "from",
+      "england",
+      "squad",
+      "injured"
+    ]
+  },
+  {
+    "slug": "article-sports-man-utd-fulham-draw.html",
+    "headline": "Manchester United Rescue Late Point at Fulham",
+    "category": "SPORTS",
+    "desc": "Matheus Cunha scored an 89th-minute equaliser as Manchester United drew 1-1 at Fulham, avoiding a third straight defeat under pressure on manager Michael Carrick.",
+    "image": "banner2-man-utd-fulham-draw.jpg",
+    "date": "2026-09-20",
+    "byline": "Gerald Anthony",
+    "readtime": "4 min read",
+    "trending": true,
+    "tags": [
+      "manchester",
+      "united",
+      "rescue",
+      "late",
+      "point",
+      "fulham"
+    ]
   }
 ]
